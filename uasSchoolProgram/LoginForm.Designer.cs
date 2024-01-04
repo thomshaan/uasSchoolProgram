@@ -34,8 +34,8 @@
             label3=new Label();
             textBox1=new TextBox();
             textBox2=new TextBox();
-            button1=new Button();
-            button2=new Button();
+            foreverButton1=new ReaLTaiizor.Controls.ForeverButton();
+            foreverButton2=new ReaLTaiizor.Controls.ForeverButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -96,24 +96,31 @@
             textBox2.Size=new Size(217, 23);
             textBox2.TabIndex=10;
             // 
-            // button1
+            // foreverButton1
             // 
-            button1.Location=new Point(400, 472);
-            button1.Name="button1";
-            button1.Size=new Size(116, 41);
-            button1.TabIndex=11;
-            button1.Text="Login";
-            button1.UseVisualStyleBackColor=true;
-            button1.Click+=button1_Click;
+            foreverButton1.BackColor=Color.Transparent;
+            foreverButton1.BaseColor=Color.FromArgb(148, 115, 96);
+            foreverButton1.Font=new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            foreverButton1.Location=new Point(396, 468);
+            foreverButton1.Name="foreverButton1";
+            foreverButton1.Rounded=false;
+            foreverButton1.Size=new Size(120, 40);
+            foreverButton1.TabIndex=13;
+            foreverButton1.Text="Login";
+            foreverButton1.TextColor=Color.FromArgb(243, 243, 243);
             // 
-            // button2
+            // foreverButton2
             // 
-            button2.Location=new Point(299, 472);
-            button2.Name="button2";
-            button2.Size=new Size(62, 41);
-            button2.TabIndex=12;
-            button2.Text="Reset";
-            button2.UseVisualStyleBackColor=true;
+            foreverButton2.BackColor=Color.Transparent;
+            foreverButton2.BaseColor=Color.FromArgb(148, 115, 96);
+            foreverButton2.Font=new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            foreverButton2.Location=new Point(299, 468);
+            foreverButton2.Name="foreverButton2";
+            foreverButton2.Rounded=false;
+            foreverButton2.Size=new Size(80, 40);
+            foreverButton2.TabIndex=14;
+            foreverButton2.Text="Reset";
+            foreverButton2.TextColor=Color.FromArgb(243, 243, 243);
             // 
             // LoginForm
             // 
@@ -121,8 +128,8 @@
             AutoScaleMode=AutoScaleMode.Font;
             BackColor=Color.FromArgb(247, 236, 208);
             ClientSize=new Size(810, 583);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(foreverButton2);
+            Controls.Add(foreverButton1);
             Controls.Add(textBox2);
             Controls.Add(textBox1);
             Controls.Add(label3);
@@ -145,7 +152,7 @@
         private Label label3;
         private TextBox textBox1;
         private TextBox textBox2;
-        private Button button1;
-        private Button button2;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton1;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton2;
     }
 }
