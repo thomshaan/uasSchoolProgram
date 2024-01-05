@@ -40,10 +40,24 @@
             foreverButton3=new ReaLTaiizor.Controls.ForeverButton();
             foreverButton2=new ReaLTaiizor.Controls.ForeverButton();
             foreverButton1=new ReaLTaiizor.Controls.ForeverButton();
+            dataGridView1=new DataGridView();
+            hopeButton1=new ReaLTaiizor.Controls.HopeButton();
+            hopeButton2=new ReaLTaiizor.Controls.HopeButton();
+            hopeButton3=new ReaLTaiizor.Controls.HopeButton();
+            hopeButton4=new ReaLTaiizor.Controls.HopeButton();
+            comboBox1=new ComboBox();
+            comboBox2=new ComboBox();
+            label3=new Label();
+            label4=new Label();
+            textBox1=new TextBox();
+            label5=new Label();
+            label6=new Label();
+            dateTimePicker1=new DateTimePicker();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -71,7 +85,7 @@
             // 
             label1.AutoSize=true;
             label1.Font=new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.ForeColor=SystemColors.ButtonFace;
+            label1.ForeColor=Color.White;
             label1.Location=new Point(124, 51);
             label1.Name="label1";
             label1.Size=new Size(96, 25);
@@ -84,7 +98,7 @@
             // 
             label2.AutoSize=true;
             label2.Font=new Font("Nohemi", 27.7499962F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor=SystemColors.ButtonFace;
+            label2.ForeColor=Color.White;
             label2.Location=new Point(124, 17);
             label2.Name="label2";
             label2.Size=new Size(222, 34);
@@ -199,12 +213,193 @@
             foreverButton1.Text="Students";
             foreverButton1.TextColor=Color.FromArgb(148, 115, 96);
             // 
-            // Form1
+            // dataGridView1
+            // 
+            dataGridView1.ColumnHeadersHeightSizeMode=DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridView1.Location=new Point(238, 348);
+            dataGridView1.Name="dataGridView1";
+            dataGridView1.RowTemplate.Height=25;
+            dataGridView1.Size=new Size(598, 246);
+            dataGridView1.TabIndex=39;
+            // 
+            // hopeButton1
+            // 
+            hopeButton1.BorderColor=Color.FromArgb(220, 223, 230);
+            hopeButton1.ButtonType=ReaLTaiizor.Util.HopeButtonType.Primary;
+            hopeButton1.DangerColor=Color.FromArgb(245, 108, 108);
+            hopeButton1.DefaultColor=Color.FromArgb(255, 255, 255);
+            hopeButton1.Font=new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            hopeButton1.HoverTextColor=Color.FromArgb(48, 49, 51);
+            hopeButton1.InfoColor=Color.FromArgb(144, 147, 153);
+            hopeButton1.Location=new Point(554, 298);
+            hopeButton1.Name="hopeButton1";
+            hopeButton1.PrimaryColor=Color.FromArgb(255, 128, 0);
+            hopeButton1.Size=new Size(108, 28);
+            hopeButton1.SuccessColor=Color.FromArgb(103, 194, 58);
+            hopeButton1.TabIndex=40;
+            hopeButton1.Text="Add";
+            hopeButton1.TextColor=Color.White;
+            hopeButton1.WarningColor=Color.FromArgb(230, 162, 60);
+            // 
+            // hopeButton2
+            // 
+            hopeButton2.BorderColor=Color.FromArgb(220, 223, 230);
+            hopeButton2.ButtonType=ReaLTaiizor.Util.HopeButtonType.Primary;
+            hopeButton2.DangerColor=Color.FromArgb(245, 108, 108);
+            hopeButton2.DefaultColor=Color.FromArgb(255, 255, 255);
+            hopeButton2.Font=new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            hopeButton2.HoverTextColor=Color.FromArgb(48, 49, 51);
+            hopeButton2.InfoColor=Color.FromArgb(144, 147, 153);
+            hopeButton2.Location=new Point(406, 298);
+            hopeButton2.Name="hopeButton2";
+            hopeButton2.PrimaryColor=Color.FromArgb(64, 158, 255);
+            hopeButton2.Size=new Size(108, 28);
+            hopeButton2.SuccessColor=Color.FromArgb(103, 194, 58);
+            hopeButton2.TabIndex=41;
+            hopeButton2.Text="Edit";
+            hopeButton2.TextColor=Color.White;
+            hopeButton2.WarningColor=Color.FromArgb(230, 162, 60);
+            // 
+            // hopeButton3
+            // 
+            hopeButton3.BorderColor=Color.FromArgb(220, 223, 230);
+            hopeButton3.ButtonType=ReaLTaiizor.Util.HopeButtonType.Primary;
+            hopeButton3.DangerColor=Color.FromArgb(245, 108, 108);
+            hopeButton3.DefaultColor=Color.FromArgb(255, 255, 255);
+            hopeButton3.Font=new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            hopeButton3.HoverTextColor=Color.FromArgb(48, 49, 51);
+            hopeButton3.InfoColor=Color.FromArgb(144, 147, 153);
+            hopeButton3.Location=new Point(260, 298);
+            hopeButton3.Name="hopeButton3";
+            hopeButton3.PrimaryColor=Color.FromArgb(64, 158, 255);
+            hopeButton3.Size=new Size(108, 28);
+            hopeButton3.SuccessColor=Color.FromArgb(103, 194, 58);
+            hopeButton3.TabIndex=42;
+            hopeButton3.Text="Delete";
+            hopeButton3.TextColor=Color.White;
+            hopeButton3.WarningColor=Color.FromArgb(230, 162, 60);
+            // 
+            // hopeButton4
+            // 
+            hopeButton4.BorderColor=Color.FromArgb(220, 223, 230);
+            hopeButton4.ButtonType=ReaLTaiizor.Util.HopeButtonType.Primary;
+            hopeButton4.DangerColor=Color.FromArgb(245, 108, 108);
+            hopeButton4.DefaultColor=Color.FromArgb(255, 255, 255);
+            hopeButton4.Font=new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            hopeButton4.HoverTextColor=Color.FromArgb(48, 49, 51);
+            hopeButton4.InfoColor=Color.FromArgb(144, 147, 153);
+            hopeButton4.Location=new Point(698, 298);
+            hopeButton4.Name="hopeButton4";
+            hopeButton4.PrimaryColor=Color.FromArgb(64, 158, 255);
+            hopeButton4.Size=new Size(108, 28);
+            hopeButton4.SuccessColor=Color.FromArgb(103, 194, 58);
+            hopeButton4.TabIndex=43;
+            hopeButton4.Text="Back";
+            hopeButton4.TextColor=Color.White;
+            hopeButton4.WarningColor=Color.FromArgb(230, 162, 60);
+            // 
+            // comboBox1
+            // 
+            comboBox1.FormattingEnabled=true;
+            comboBox1.Location=new Point(638, 136);
+            comboBox1.Name="comboBox1";
+            comboBox1.Size=new Size(108, 23);
+            comboBox1.TabIndex=44;
+            // 
+            // comboBox2
+            // 
+            comboBox2.FormattingEnabled=true;
+            comboBox2.Location=new Point(358, 136);
+            comboBox2.Name="comboBox2";
+            comboBox2.Size=new Size(184, 23);
+            comboBox2.TabIndex=45;
+            // 
+            // label3
+            // 
+            label3.AutoSize=true;
+            label3.Font=new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.ForeColor=SystemColors.ActiveCaptionText;
+            label3.Location=new Point(260, 136);
+            label3.Name="label3";
+            label3.Size=new Size(92, 25);
+            label3.TabIndex=21;
+            label3.Text="Student ID";
+            label3.TextAlign=ContentAlignment.MiddleCenter;
+            label3.UseMnemonic=false;
+            // 
+            // label4
+            // 
+            label4.AutoSize=true;
+            label4.Font=new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label4.ForeColor=SystemColors.ActiveCaptionText;
+            label4.Location=new Point(572, 136);
+            label4.Name="label4";
+            label4.Size=new Size(60, 25);
+            label4.TabIndex=46;
+            label4.Text="Status";
+            label4.TextAlign=ContentAlignment.MiddleCenter;
+            label4.UseMnemonic=false;
+            // 
+            // textBox1
+            // 
+            textBox1.Location=new Point(358, 184);
+            textBox1.Multiline=true;
+            textBox1.Name="textBox1";
+            textBox1.Size=new Size(184, 57);
+            textBox1.TabIndex=47;
+            // 
+            // label5
+            // 
+            label5.AutoSize=true;
+            label5.Font=new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.ForeColor=SystemColors.ActiveCaptionText;
+            label5.Location=new Point(230, 184);
+            label5.Name="label5";
+            label5.Size=new Size(122, 25);
+            label5.TabIndex=48;
+            label5.Text="Student Name";
+            label5.TextAlign=ContentAlignment.MiddleCenter;
+            label5.UseMnemonic=false;
+            // 
+            // label6
+            // 
+            label6.AutoSize=true;
+            label6.Font=new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.ForeColor=SystemColors.ActiveCaptionText;
+            label6.Location=new Point(572, 180);
+            label6.Name="label6";
+            label6.Size=new Size(49, 25);
+            label6.TabIndex=50;
+            label6.Text="Date";
+            label6.TextAlign=ContentAlignment.MiddleCenter;
+            label6.UseMnemonic=false;
+            // 
+            // dateTimePicker1
+            // 
+            dateTimePicker1.Location=new Point(638, 181);
+            dateTimePicker1.Name="dateTimePicker1";
+            dateTimePicker1.Size=new Size(198, 23);
+            dateTimePicker1.TabIndex=51;
+            // 
+            // Attendance
             // 
             AutoScaleDimensions=new SizeF(7F, 15F);
             AutoScaleMode=AutoScaleMode.Font;
             BackColor=Color.FromArgb(247, 236, 208);
             ClientSize=new Size(877, 629);
+            Controls.Add(dateTimePicker1);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(textBox1);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(comboBox2);
+            Controls.Add(comboBox1);
+            Controls.Add(hopeButton4);
+            Controls.Add(hopeButton3);
+            Controls.Add(hopeButton2);
+            Controls.Add(hopeButton1);
+            Controls.Add(dataGridView1);
             Controls.Add(foreverButton6);
             Controls.Add(foreverButton5);
             Controls.Add(foreverButton4);
@@ -214,14 +409,16 @@
             Controls.Add(pictureBox9);
             Controls.Add(panel1);
             FormBorderStyle=FormBorderStyle.None;
-            Name="Form1";
+            Name="Attendance";
             Text="Form1";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
@@ -238,5 +435,18 @@
         private ReaLTaiizor.Controls.ForeverButton foreverButton3;
         private ReaLTaiizor.Controls.ForeverButton foreverButton2;
         private ReaLTaiizor.Controls.ForeverButton foreverButton1;
+        private DataGridView dataGridView1;
+        private ReaLTaiizor.Controls.HopeButton hopeButton1;
+        private ReaLTaiizor.Controls.HopeButton hopeButton2;
+        private ReaLTaiizor.Controls.HopeButton hopeButton3;
+        private ReaLTaiizor.Controls.HopeButton hopeButton4;
+        private ComboBox comboBox1;
+        private ComboBox comboBox2;
+        private Label label3;
+        private Label label4;
+        private TextBox textBox1;
+        private Label label5;
+        private Label label6;
+        private DateTimePicker dateTimePicker1;
     }
 }

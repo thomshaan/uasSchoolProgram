@@ -10,20 +10,11 @@ using System.Windows.Forms;
 
 namespace uasSchoolProgram
 {
-    public partial class Student : Form
+    public partial class Fees : Form
     {
-        public Student()
+        public Fees()
         {
             InitializeComponent();
-        }
-
-        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label6_Click(object sender, EventArgs e)
-        {
         }
     }
 }

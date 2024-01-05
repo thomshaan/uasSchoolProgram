@@ -42,7 +42,6 @@
             label4=new Label();
             label5=new Label();
             label6=new Label();
-            label7=new Label();
             label8=new Label();
             label9=new Label();
             pictureBox9=new PictureBox();
@@ -198,19 +197,10 @@
             label6.TabIndex=17;
             label6.Text="Attendance";
             // 
-            // label7
-            // 
-            label7.AutoSize=true;
-            label7.Location=new Point(316, 460);
-            label7.Name="label7";
-            label7.Size=new Size(41, 15);
-            label7.TabIndex=18;
-            label7.Text="Events";
-            // 
             // label8
             // 
             label8.AutoSize=true;
-            label8.Location=new Point(529, 460);
+            label8.Location=new Point(520, 460);
             label8.Name="label8";
             label8.Size=new Size(69, 15);
             label8.TabIndex=19;
@@ -337,7 +327,6 @@
             Controls.Add(pictureBox9);
             Controls.Add(label9);
             Controls.Add(label8);
-            Controls.Add(label7);
             Controls.Add(label6);
             Controls.Add(label5);
             Controls.Add(label4);
@@ -382,7 +371,6 @@
         private Label label4;
         private Label label5;
         private Label label6;
-        private Label label7;
         private Label label8;
         private Label label9;
         private PictureBox pictureBox9;
