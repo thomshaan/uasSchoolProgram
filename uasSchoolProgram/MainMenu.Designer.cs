@@ -51,6 +51,7 @@
             foreverButton4=new ReaLTaiizor.Controls.ForeverButton();
             foreverButton5=new ReaLTaiizor.Controls.ForeverButton();
             foreverButton6=new ReaLTaiizor.Controls.ForeverButton();
+            label3=new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -312,12 +313,23 @@
             foreverButton6.Text="Fees";
             foreverButton6.TextColor=Color.FromArgb(148, 115, 96);
             // 
+            // label3
+            // 
+            label3.AutoSize=true;
+            label3.Location=new Point(304, 460);
+            label3.Name="label3";
+            label3.Size=new Size(41, 15);
+            label3.TabIndex=27;
+            label3.Text="Events";
+            label3.TextAlign=ContentAlignment.MiddleCenter;
+            // 
             // MainMenu
             // 
             AutoScaleDimensions=new SizeF(7F, 15F);
             AutoScaleMode=AutoScaleMode.Font;
             BackColor=Color.FromArgb(247, 236, 208);
             ClientSize=new Size(892, 607);
+            Controls.Add(label3);
             Controls.Add(foreverButton6);
             Controls.Add(foreverButton5);
             Controls.Add(foreverButton4);
@@ -380,5 +392,6 @@
         private ReaLTaiizor.Controls.ForeverButton foreverButton4;
         private ReaLTaiizor.Controls.ForeverButton foreverButton5;
         private ReaLTaiizor.Controls.ForeverButton foreverButton6;
+        private Label label3;
     }
 }

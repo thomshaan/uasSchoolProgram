@@ -127,7 +127,7 @@
             pictureBox9.Dock=DockStyle.Left;
             pictureBox9.Location=new Point(0, 94);
             pictureBox9.Name="pictureBox9";
-            pictureBox9.Size=new Size(185, 529);
+            pictureBox9.Size=new Size(185, 545);
             pictureBox9.TabIndex=24;
             pictureBox9.TabStop=false;
             // 
@@ -352,7 +352,7 @@
             dataGridView1.Location=new Point(217, 350);
             dataGridView1.Name="dataGridView1";
             dataGridView1.RowTemplate.Height=25;
-            dataGridView1.Size=new Size(598, 246);
+            dataGridView1.Size=new Size(598, 277);
             dataGridView1.TabIndex=53;
             // 
             // textBox2
@@ -411,7 +411,7 @@
             AutoScaleDimensions=new SizeF(7F, 15F);
             AutoScaleMode=AutoScaleMode.Font;
             BackColor=Color.FromArgb(247, 236, 208);
-            ClientSize=new Size(844, 623);
+            ClientSize=new Size(844, 639);
             Controls.Add(textBox1);
             Controls.Add(label8);
             Controls.Add(label7);

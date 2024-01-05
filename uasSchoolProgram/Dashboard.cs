@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace uasSchoolProgram
 {
-    public partial class Fees : Form
+    public partial class Dashboard : Form
     {
-        public Fees()
+        public Dashboard()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

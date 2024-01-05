@@ -1,6 +1,6 @@
 ﻿namespace uasSchoolProgram
 {
-    partial class Fees
+    partial class Dashboard
     {
         /// <summary>
         /// Required designer variable.
@@ -56,8 +56,8 @@
             panel1.Dock=DockStyle.Top;
             panel1.Location=new Point(0, 0);
             panel1.Name="panel1";
-            panel1.Size=new Size(881, 94);
-            panel1.TabIndex=24;
+            panel1.Size=new Size(905, 94);
+            panel1.TabIndex=23;
             // 
             // pictureBox8
             // 
@@ -87,12 +87,11 @@
             label2.ForeColor=Color.White;
             label2.Location=new Point(124, 17);
             label2.Name="label2";
-            label2.Size=new Size(99, 34);
+            label2.Size=new Size(206, 34);
             label2.TabIndex=6;
-            label2.Text="Fees";
+            label2.Text="Dashboard";
             label2.TextAlign=ContentAlignment.MiddleCenter;
             label2.UseMnemonic=false;
-            label2.Click+=label2_Click;
             // 
             // pictureBox1
             // 
@@ -112,8 +111,8 @@
             pictureBox9.Dock=DockStyle.Left;
             pictureBox9.Location=new Point(0, 94);
             pictureBox9.Name="pictureBox9";
-            pictureBox9.Size=new Size(185, 528);
-            pictureBox9.TabIndex=25;
+            pictureBox9.Size=new Size(185, 523);
+            pictureBox9.TabIndex=24;
             pictureBox9.TabStop=false;
             // 
             // foreverButton6
@@ -122,11 +121,11 @@
             foreverButton6.BackgroundImageLayout=ImageLayout.None;
             foreverButton6.BaseColor=Color.FromArgb(247, 236, 208);
             foreverButton6.Font=new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton6.Location=new Point(0, 365);
+            foreverButton6.Location=new Point(0, 362);
             foreverButton6.Name="foreverButton6";
             foreverButton6.Rounded=false;
             foreverButton6.Size=new Size(185, 45);
-            foreverButton6.TabIndex=62;
+            foreverButton6.TabIndex=56;
             foreverButton6.Text="Fees";
             foreverButton6.TextColor=Color.FromArgb(148, 115, 96);
             // 
@@ -136,11 +135,11 @@
             foreverButton5.BackgroundImageLayout=ImageLayout.None;
             foreverButton5.BaseColor=Color.FromArgb(247, 236, 208);
             foreverButton5.Font=new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton5.Location=new Point(0, 314);
+            foreverButton5.Location=new Point(0, 311);
             foreverButton5.Name="foreverButton5";
             foreverButton5.Rounded=false;
             foreverButton5.Size=new Size(185, 45);
-            foreverButton5.TabIndex=61;
+            foreverButton5.TabIndex=55;
             foreverButton5.Text="Dashboards";
             foreverButton5.TextColor=Color.FromArgb(148, 115, 96);
             // 
@@ -150,11 +149,11 @@
             foreverButton4.BackgroundImageLayout=ImageLayout.None;
             foreverButton4.BaseColor=Color.FromArgb(247, 236, 208);
             foreverButton4.Font=new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton4.Location=new Point(0, 263);
+            foreverButton4.Location=new Point(0, 260);
             foreverButton4.Name="foreverButton4";
             foreverButton4.Rounded=false;
             foreverButton4.Size=new Size(185, 45);
-            foreverButton4.TabIndex=60;
+            foreverButton4.TabIndex=54;
             foreverButton4.Text="Events";
             foreverButton4.TextColor=Color.FromArgb(148, 115, 96);
             // 
@@ -164,11 +163,11 @@
             foreverButton3.BackgroundImageLayout=ImageLayout.None;
             foreverButton3.BaseColor=Color.FromArgb(247, 236, 208);
             foreverButton3.Font=new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton3.Location=new Point(0, 212);
+            foreverButton3.Location=new Point(0, 209);
             foreverButton3.Name="foreverButton3";
             foreverButton3.Rounded=false;
             foreverButton3.Size=new Size(185, 45);
-            foreverButton3.TabIndex=59;
+            foreverButton3.TabIndex=53;
             foreverButton3.Text="Attendance";
             foreverButton3.TextColor=Color.FromArgb(148, 115, 96);
             // 
@@ -178,11 +177,11 @@
             foreverButton1.BackgroundImageLayout=ImageLayout.None;
             foreverButton1.BaseColor=Color.FromArgb(247, 236, 208);
             foreverButton1.Font=new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton1.Location=new Point(0, 110);
+            foreverButton1.Location=new Point(0, 107);
             foreverButton1.Name="foreverButton1";
             foreverButton1.Rounded=false;
             foreverButton1.Size=new Size(185, 45);
-            foreverButton1.TabIndex=57;
+            foreverButton1.TabIndex=51;
             foreverButton1.Text="Students";
             foreverButton1.TextColor=Color.FromArgb(148, 115, 96);
             // 
@@ -192,20 +191,20 @@
             foreverButton2.BackgroundImageLayout=ImageLayout.None;
             foreverButton2.BaseColor=Color.FromArgb(247, 236, 208);
             foreverButton2.Font=new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton2.Location=new Point(0, 161);
+            foreverButton2.Location=new Point(0, 158);
             foreverButton2.Name="foreverButton2";
             foreverButton2.Rounded=false;
             foreverButton2.Size=new Size(185, 45);
-            foreverButton2.TabIndex=58;
+            foreverButton2.TabIndex=52;
             foreverButton2.Text="Teachers";
             foreverButton2.TextColor=Color.FromArgb(148, 115, 96);
             // 
-            // Fees
+            // Form1
             // 
             AutoScaleDimensions=new SizeF(7F, 15F);
             AutoScaleMode=AutoScaleMode.Font;
             BackColor=Color.FromArgb(247, 236, 208);
-            ClientSize=new Size(881, 622);
+            ClientSize=new Size(905, 617);
             Controls.Add(foreverButton6);
             Controls.Add(foreverButton5);
             Controls.Add(foreverButton4);
@@ -215,8 +214,8 @@
             Controls.Add(pictureBox9);
             Controls.Add(panel1);
             FormBorderStyle=FormBorderStyle.None;
-            Name="Fees";
-            Text="Fees";
+            Name="Form1";
+            Text="Form1";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
