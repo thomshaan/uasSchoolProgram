@@ -63,6 +63,16 @@ namespace uasSchoolProgram.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_close_window_100 {
+            get {
+                object obj = ResourceManager.GetObject("icons8-close-window-100", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap school_icon_png_14043 {
             get {
                 object obj = ResourceManager.GetObject("school-icon-png-14043", resourceCulture);
