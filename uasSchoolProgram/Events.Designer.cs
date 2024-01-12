@@ -35,17 +35,16 @@
             label2 = new Label();
             pictureBox1 = new PictureBox();
             pictureBox9 = new PictureBox();
-            textBox2 = new TextBox();
+            EDurationTb = new TextBox();
             label7 = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            EDate = new DateTimePicker();
             label6 = new Label();
             label5 = new Label();
-            textBox1 = new TextBox();
-            hopeButton4 = new ReaLTaiizor.Controls.HopeButton();
-            hopeButton3 = new ReaLTaiizor.Controls.HopeButton();
-            hopeButton2 = new ReaLTaiizor.Controls.HopeButton();
-            hopeButton1 = new ReaLTaiizor.Controls.HopeButton();
-            dataGridView1 = new DataGridView();
+            EDescTb = new TextBox();
+            BackBtn = new ReaLTaiizor.Controls.HopeButton();
+            DeleteBtn = new ReaLTaiizor.Controls.HopeButton();
+            EditBtn = new ReaLTaiizor.Controls.HopeButton();
+            AddBtn = new ReaLTaiizor.Controls.HopeButton();
             foreverButton6 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton5 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton4 = new ReaLTaiizor.Controls.ForeverButton();
@@ -53,11 +52,12 @@
             foreverButton1 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton2 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton7 = new ReaLTaiizor.Controls.ForeverButton();
+            EventsDGV = new DataGridView();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)EventsDGV).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -84,6 +84,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 21;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // label1
             // 
@@ -133,13 +134,13 @@
             pictureBox9.TabIndex = 24;
             pictureBox9.TabStop = false;
             // 
-            // textBox2
+            // EDurationTb
             // 
-            textBox2.Location = new Point(690, 125);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(165, 57);
-            textBox2.TabIndex = 101;
+            EDurationTb.Location = new Point(690, 125);
+            EDurationTb.Multiline = true;
+            EDurationTb.Name = "EDurationTb";
+            EDurationTb.Size = new Size(165, 57);
+            EDurationTb.TabIndex = 101;
             // 
             // label7
             // 
@@ -154,12 +155,12 @@
             label7.TextAlign = ContentAlignment.MiddleCenter;
             label7.UseMnemonic = false;
             // 
-            // dateTimePicker1
+            // EDate
             // 
-            dateTimePicker1.Location = new Point(353, 216);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(160, 23);
-            dateTimePicker1.TabIndex = 99;
+            EDate.Location = new Point(353, 216);
+            EDate.Name = "EDate";
+            EDate.Size = new Size(160, 23);
+            EDate.TabIndex = 99;
             // 
             // label6
             // 
@@ -187,98 +188,93 @@
             label5.TextAlign = ContentAlignment.MiddleCenter;
             label5.UseMnemonic = false;
             // 
-            // textBox1
+            // EDescTb
             // 
-            textBox1.Location = new Point(353, 125);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(160, 57);
-            textBox1.TabIndex = 96;
+            EDescTb.Location = new Point(353, 125);
+            EDescTb.Multiline = true;
+            EDescTb.Name = "EDescTb";
+            EDescTb.Size = new Size(160, 57);
+            EDescTb.TabIndex = 96;
             // 
-            // hopeButton4
+            // BackBtn
             // 
-            hopeButton4.BorderColor = Color.FromArgb(220, 223, 230);
-            hopeButton4.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            hopeButton4.DangerColor = Color.FromArgb(245, 108, 108);
-            hopeButton4.DefaultColor = Color.FromArgb(255, 255, 255);
-            hopeButton4.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            hopeButton4.HoverTextColor = Color.FromArgb(48, 49, 51);
-            hopeButton4.InfoColor = Color.FromArgb(144, 147, 153);
-            hopeButton4.Location = new Point(697, 287);
-            hopeButton4.Name = "hopeButton4";
-            hopeButton4.PrimaryColor = Color.FromArgb(148, 115, 96);
-            hopeButton4.Size = new Size(108, 28);
-            hopeButton4.SuccessColor = Color.FromArgb(103, 194, 58);
-            hopeButton4.TabIndex = 93;
-            hopeButton4.Text = "Back";
-            hopeButton4.TextColor = Color.White;
-            hopeButton4.WarningColor = Color.FromArgb(230, 162, 60);
+            BackBtn.BorderColor = Color.FromArgb(220, 223, 230);
+            BackBtn.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            BackBtn.DangerColor = Color.FromArgb(245, 108, 108);
+            BackBtn.DefaultColor = Color.FromArgb(255, 255, 255);
+            BackBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            BackBtn.HoverTextColor = Color.FromArgb(48, 49, 51);
+            BackBtn.InfoColor = Color.FromArgb(144, 147, 153);
+            BackBtn.Location = new Point(697, 287);
+            BackBtn.Name = "BackBtn";
+            BackBtn.PrimaryColor = Color.FromArgb(148, 115, 96);
+            BackBtn.Size = new Size(108, 28);
+            BackBtn.SuccessColor = Color.FromArgb(103, 194, 58);
+            BackBtn.TabIndex = 93;
+            BackBtn.Text = "Back";
+            BackBtn.TextColor = Color.White;
+            BackBtn.WarningColor = Color.FromArgb(230, 162, 60);
+            BackBtn.Click += BackBtn_Click;
             // 
-            // hopeButton3
+            // DeleteBtn
             // 
-            hopeButton3.BorderColor = Color.FromArgb(220, 223, 230);
-            hopeButton3.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            hopeButton3.DangerColor = Color.FromArgb(245, 108, 108);
-            hopeButton3.DefaultColor = Color.FromArgb(255, 255, 255);
-            hopeButton3.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            hopeButton3.HoverTextColor = Color.FromArgb(48, 49, 51);
-            hopeButton3.InfoColor = Color.FromArgb(144, 147, 153);
-            hopeButton3.Location = new Point(259, 287);
-            hopeButton3.Name = "hopeButton3";
-            hopeButton3.PrimaryColor = Color.FromArgb(148, 115, 96);
-            hopeButton3.Size = new Size(108, 28);
-            hopeButton3.SuccessColor = Color.FromArgb(103, 194, 58);
-            hopeButton3.TabIndex = 92;
-            hopeButton3.Text = "Delete";
-            hopeButton3.TextColor = Color.White;
-            hopeButton3.WarningColor = Color.FromArgb(230, 162, 60);
+            DeleteBtn.BorderColor = Color.FromArgb(220, 223, 230);
+            DeleteBtn.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            DeleteBtn.DangerColor = Color.FromArgb(245, 108, 108);
+            DeleteBtn.DefaultColor = Color.FromArgb(255, 255, 255);
+            DeleteBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            DeleteBtn.HoverTextColor = Color.FromArgb(48, 49, 51);
+            DeleteBtn.InfoColor = Color.FromArgb(144, 147, 153);
+            DeleteBtn.Location = new Point(259, 287);
+            DeleteBtn.Name = "DeleteBtn";
+            DeleteBtn.PrimaryColor = Color.FromArgb(148, 115, 96);
+            DeleteBtn.Size = new Size(108, 28);
+            DeleteBtn.SuccessColor = Color.FromArgb(103, 194, 58);
+            DeleteBtn.TabIndex = 92;
+            DeleteBtn.Text = "Delete";
+            DeleteBtn.TextColor = Color.White;
+            DeleteBtn.WarningColor = Color.FromArgb(230, 162, 60);
+            DeleteBtn.Click += DeleteBtn_Click;
             // 
-            // hopeButton2
+            // EditBtn
             // 
-            hopeButton2.BorderColor = Color.FromArgb(220, 223, 230);
-            hopeButton2.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            hopeButton2.DangerColor = Color.FromArgb(245, 108, 108);
-            hopeButton2.DefaultColor = Color.FromArgb(255, 255, 255);
-            hopeButton2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            hopeButton2.HoverTextColor = Color.FromArgb(48, 49, 51);
-            hopeButton2.InfoColor = Color.FromArgb(144, 147, 153);
-            hopeButton2.Location = new Point(405, 287);
-            hopeButton2.Name = "hopeButton2";
-            hopeButton2.PrimaryColor = Color.FromArgb(148, 115, 96);
-            hopeButton2.Size = new Size(108, 28);
-            hopeButton2.SuccessColor = Color.FromArgb(103, 194, 58);
-            hopeButton2.TabIndex = 91;
-            hopeButton2.Text = "Edit";
-            hopeButton2.TextColor = Color.White;
-            hopeButton2.WarningColor = Color.FromArgb(230, 162, 60);
+            EditBtn.BorderColor = Color.FromArgb(220, 223, 230);
+            EditBtn.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            EditBtn.DangerColor = Color.FromArgb(245, 108, 108);
+            EditBtn.DefaultColor = Color.FromArgb(255, 255, 255);
+            EditBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            EditBtn.HoverTextColor = Color.FromArgb(48, 49, 51);
+            EditBtn.InfoColor = Color.FromArgb(144, 147, 153);
+            EditBtn.Location = new Point(405, 287);
+            EditBtn.Name = "EditBtn";
+            EditBtn.PrimaryColor = Color.FromArgb(148, 115, 96);
+            EditBtn.Size = new Size(108, 28);
+            EditBtn.SuccessColor = Color.FromArgb(103, 194, 58);
+            EditBtn.TabIndex = 91;
+            EditBtn.Text = "Edit";
+            EditBtn.TextColor = Color.White;
+            EditBtn.WarningColor = Color.FromArgb(230, 162, 60);
+            EditBtn.Click += EditBtn_Click;
             // 
-            // hopeButton1
+            // AddBtn
             // 
-            hopeButton1.BorderColor = Color.FromArgb(220, 223, 230);
-            hopeButton1.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            hopeButton1.DangerColor = Color.FromArgb(245, 108, 108);
-            hopeButton1.DefaultColor = Color.FromArgb(255, 255, 255);
-            hopeButton1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            hopeButton1.HoverTextColor = Color.FromArgb(48, 49, 51);
-            hopeButton1.InfoColor = Color.FromArgb(144, 147, 153);
-            hopeButton1.Location = new Point(553, 287);
-            hopeButton1.Name = "hopeButton1";
-            hopeButton1.PrimaryColor = Color.FromArgb(255, 128, 0);
-            hopeButton1.Size = new Size(108, 28);
-            hopeButton1.SuccessColor = Color.FromArgb(103, 194, 58);
-            hopeButton1.TabIndex = 90;
-            hopeButton1.Text = "Add";
-            hopeButton1.TextColor = Color.White;
-            hopeButton1.WarningColor = Color.FromArgb(230, 162, 60);
-            // 
-            // dataGridView1
-            // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(237, 337);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(598, 246);
-            dataGridView1.TabIndex = 89;
+            AddBtn.BorderColor = Color.FromArgb(220, 223, 230);
+            AddBtn.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            AddBtn.DangerColor = Color.FromArgb(245, 108, 108);
+            AddBtn.DefaultColor = Color.FromArgb(255, 255, 255);
+            AddBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            AddBtn.HoverTextColor = Color.FromArgb(48, 49, 51);
+            AddBtn.InfoColor = Color.FromArgb(144, 147, 153);
+            AddBtn.Location = new Point(553, 287);
+            AddBtn.Name = "AddBtn";
+            AddBtn.PrimaryColor = Color.FromArgb(255, 128, 0);
+            AddBtn.Size = new Size(108, 28);
+            AddBtn.SuccessColor = Color.FromArgb(103, 194, 58);
+            AddBtn.TabIndex = 90;
+            AddBtn.Text = "Add";
+            AddBtn.TextColor = Color.White;
+            AddBtn.WarningColor = Color.FromArgb(230, 162, 60);
+            AddBtn.Click += AddBtn_Click;
             // 
             // foreverButton6
             // 
@@ -378,24 +374,41 @@
             foreverButton7.Text = "Main Menu";
             foreverButton7.TextColor = Color.FromArgb(148, 115, 96);
             // 
+            // EventsDGV
+            // 
+            EventsDGV.AllowUserToAddRows = false;
+            EventsDGV.AllowUserToDeleteRows = false;
+            EventsDGV.BackgroundColor = Color.FromArgb(148, 115, 96);
+            EventsDGV.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            EventsDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            EventsDGV.GridColor = SystemColors.ButtonFace;
+            EventsDGV.Location = new Point(223, 341);
+            EventsDGV.Name = "EventsDGV";
+            EventsDGV.ReadOnly = true;
+            EventsDGV.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            EventsDGV.RowTemplate.Height = 25;
+            EventsDGV.Size = new Size(632, 256);
+            EventsDGV.TabIndex = 103;
+            EventsDGV.CellContentClick += EventsDGV_CellContentClick;
+            // 
             // Events
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(900, 623);
+            Controls.Add(EventsDGV);
             Controls.Add(foreverButton7);
-            Controls.Add(textBox2);
+            Controls.Add(EDurationTb);
             Controls.Add(label7);
-            Controls.Add(dateTimePicker1);
+            Controls.Add(EDate);
             Controls.Add(label6);
             Controls.Add(label5);
-            Controls.Add(textBox1);
-            Controls.Add(hopeButton4);
-            Controls.Add(hopeButton3);
-            Controls.Add(hopeButton2);
-            Controls.Add(hopeButton1);
-            Controls.Add(dataGridView1);
+            Controls.Add(EDescTb);
+            Controls.Add(BackBtn);
+            Controls.Add(DeleteBtn);
+            Controls.Add(EditBtn);
+            Controls.Add(AddBtn);
             Controls.Add(foreverButton6);
             Controls.Add(foreverButton5);
             Controls.Add(foreverButton4);
@@ -412,7 +425,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)EventsDGV).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -424,17 +437,16 @@
         private Label label2;
         private PictureBox pictureBox1;
         private PictureBox pictureBox9;
-        private TextBox textBox2;
+        private TextBox EDurationTb;
         private Label label7;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker EDate;
         private Label label6;
         private Label label5;
-        private TextBox textBox1;
-        private ReaLTaiizor.Controls.HopeButton hopeButton4;
-        private ReaLTaiizor.Controls.HopeButton hopeButton3;
-        private ReaLTaiizor.Controls.HopeButton hopeButton2;
-        private ReaLTaiizor.Controls.HopeButton hopeButton1;
-        private DataGridView dataGridView1;
+        private TextBox EDescTb;
+        private ReaLTaiizor.Controls.HopeButton BackBtn;
+        private ReaLTaiizor.Controls.HopeButton DeleteBtn;
+        private ReaLTaiizor.Controls.HopeButton EditBtn;
+        private ReaLTaiizor.Controls.HopeButton AddBtn;
         private ReaLTaiizor.Controls.ForeverButton foreverButton6;
         private ReaLTaiizor.Controls.ForeverButton foreverButton5;
         private ReaLTaiizor.Controls.ForeverButton foreverButton4;
@@ -443,5 +455,6 @@
         private ReaLTaiizor.Controls.ForeverButton foreverButton2;
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.ForeverButton foreverButton7;
+        private DataGridView EventsDGV;
     }
 }

@@ -173,7 +173,35 @@ namespace uasSchoolProgram
         private void DeleteBtn_Click(object sender, EventArgs e)
         {
 
-            Reset();
+            if (Key == 0)
+            {
+                MessageBox.Show("Select Student");
+            }
+
+            else
+            {
+                try
+                {
+                    Con.Open();
+
+                    SqlCommand cmd = new SqlCommand("delete from AttendanceTbl where AttNum= @AttNum", Con);
+                    cmd.Parameters.AddWithValue("@AttNum", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Attendance Deleted");
+                    Con.Close();
+                    DisplayAttendance();
+                    Reset();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+
+
+
+            }
         }
 
         int Key = 0;
@@ -232,6 +260,13 @@ namespace uasSchoolProgram
                     MessageBox.Show(Ex.Message);
                 }
             }
+        }
+
+        private void BackBtn_Click(object sender, EventArgs e)
+        {
+            MainMenu Obj = new MainMenu();
+            Obj.Show();
+            this.Hide();
         }
     }
 }

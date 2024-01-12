@@ -143,6 +143,7 @@
             pictureBox3.Size = new Size(138, 126);
             pictureBox3.TabIndex = 10;
             pictureBox3.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox4
             // 

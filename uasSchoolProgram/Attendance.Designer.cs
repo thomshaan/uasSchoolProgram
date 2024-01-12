@@ -304,6 +304,7 @@
             BackBtn.Text = "Back";
             BackBtn.TextColor = Color.White;
             BackBtn.WarningColor = Color.FromArgb(230, 162, 60);
+            BackBtn.Click += BackBtn_Click;
             // 
             // AttStatusCb
             // 
