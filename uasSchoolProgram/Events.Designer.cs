@@ -45,11 +45,11 @@
             DeleteBtn = new ReaLTaiizor.Controls.HopeButton();
             EditBtn = new ReaLTaiizor.Controls.HopeButton();
             AddBtn = new ReaLTaiizor.Controls.HopeButton();
-            foreverButton6 = new ReaLTaiizor.Controls.ForeverButton();
+            Fees = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton5 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton4 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton3 = new ReaLTaiizor.Controls.ForeverButton();
-            foreverButton1 = new ReaLTaiizor.Controls.ForeverButton();
+            Students = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton2 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton7 = new ReaLTaiizor.Controls.ForeverButton();
             EventsDGV = new DataGridView();
@@ -276,19 +276,20 @@
             AddBtn.WarningColor = Color.FromArgb(230, 162, 60);
             AddBtn.Click += AddBtn_Click;
             // 
-            // foreverButton6
+            // Fees
             // 
-            foreverButton6.BackColor = Color.Transparent;
-            foreverButton6.BackgroundImageLayout = ImageLayout.None;
-            foreverButton6.BaseColor = Color.FromArgb(247, 236, 208);
-            foreverButton6.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton6.Location = new Point(0, 367);
-            foreverButton6.Name = "foreverButton6";
-            foreverButton6.Rounded = false;
-            foreverButton6.Size = new Size(185, 45);
-            foreverButton6.TabIndex = 88;
-            foreverButton6.Text = "Fees";
-            foreverButton6.TextColor = Color.FromArgb(148, 115, 96);
+            Fees.BackColor = Color.Transparent;
+            Fees.BackgroundImageLayout = ImageLayout.None;
+            Fees.BaseColor = Color.FromArgb(247, 236, 208);
+            Fees.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            Fees.Location = new Point(0, 367);
+            Fees.Name = "Fees";
+            Fees.Rounded = false;
+            Fees.Size = new Size(185, 45);
+            Fees.TabIndex = 88;
+            Fees.Text = "Fees";
+            Fees.TextColor = Color.FromArgb(148, 115, 96);
+            Fees.Click += Fees_Click;
             // 
             // foreverButton5
             // 
@@ -303,6 +304,7 @@
             foreverButton5.TabIndex = 87;
             foreverButton5.Text = "Dashboards";
             foreverButton5.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton5.Click += foreverButton5_Click;
             // 
             // foreverButton4
             // 
@@ -317,6 +319,7 @@
             foreverButton4.TabIndex = 86;
             foreverButton4.Text = "Events";
             foreverButton4.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton4.Click += foreverButton4_Click;
             // 
             // foreverButton3
             // 
@@ -331,20 +334,22 @@
             foreverButton3.TabIndex = 85;
             foreverButton3.Text = "Attendance";
             foreverButton3.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton3.Click += foreverButton3_Click;
             // 
-            // foreverButton1
+            // Students
             // 
-            foreverButton1.BackColor = Color.Transparent;
-            foreverButton1.BackgroundImageLayout = ImageLayout.None;
-            foreverButton1.BaseColor = Color.FromArgb(247, 236, 208);
-            foreverButton1.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton1.Location = new Point(0, 112);
-            foreverButton1.Name = "foreverButton1";
-            foreverButton1.Rounded = false;
-            foreverButton1.Size = new Size(185, 45);
-            foreverButton1.TabIndex = 83;
-            foreverButton1.Text = "Students";
-            foreverButton1.TextColor = Color.FromArgb(148, 115, 96);
+            Students.BackColor = Color.Transparent;
+            Students.BackgroundImageLayout = ImageLayout.None;
+            Students.BaseColor = Color.FromArgb(247, 236, 208);
+            Students.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            Students.Location = new Point(0, 112);
+            Students.Name = "Students";
+            Students.Rounded = false;
+            Students.Size = new Size(185, 45);
+            Students.TabIndex = 83;
+            Students.Text = "Students";
+            Students.TextColor = Color.FromArgb(148, 115, 96);
+            Students.Click += foreverButton1_Click;
             // 
             // foreverButton2
             // 
@@ -359,6 +364,7 @@
             foreverButton2.TabIndex = 84;
             foreverButton2.Text = "Teachers";
             foreverButton2.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton2.Click += foreverButton2_Click;
             // 
             // foreverButton7
             // 
@@ -373,6 +379,7 @@
             foreverButton7.TabIndex = 102;
             foreverButton7.Text = "Main Menu";
             foreverButton7.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton7.Click += foreverButton7_Click;
             // 
             // EventsDGV
             // 
@@ -409,11 +416,11 @@
             Controls.Add(DeleteBtn);
             Controls.Add(EditBtn);
             Controls.Add(AddBtn);
-            Controls.Add(foreverButton6);
+            Controls.Add(Fees);
             Controls.Add(foreverButton5);
             Controls.Add(foreverButton4);
             Controls.Add(foreverButton3);
-            Controls.Add(foreverButton1);
+            Controls.Add(Students);
             Controls.Add(foreverButton2);
             Controls.Add(pictureBox9);
             Controls.Add(panel1);
@@ -447,11 +454,11 @@
         private ReaLTaiizor.Controls.HopeButton DeleteBtn;
         private ReaLTaiizor.Controls.HopeButton EditBtn;
         private ReaLTaiizor.Controls.HopeButton AddBtn;
-        private ReaLTaiizor.Controls.ForeverButton foreverButton6;
+        private ReaLTaiizor.Controls.ForeverButton Fees;
         private ReaLTaiizor.Controls.ForeverButton foreverButton5;
         private ReaLTaiizor.Controls.ForeverButton foreverButton4;
         private ReaLTaiizor.Controls.ForeverButton foreverButton3;
-        private ReaLTaiizor.Controls.ForeverButton foreverButton1;
+        private ReaLTaiizor.Controls.ForeverButton Students;
         private ReaLTaiizor.Controls.ForeverButton foreverButton2;
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.ForeverButton foreverButton7;

@@ -158,10 +158,11 @@ namespace uasSchoolProgram
                 try
                 {
                     Con.Open();
-                    SqlCommand cmd = new SqlCommand("Update EventTbl set EDesc=@EvDesc, EDate=@EvDate, EDuration=@EvDuration where EId=@EvID", Con);
+                    SqlCommand cmd = new SqlCommand("Update EventsTbl set EDesc=@EvDesc, EDate=@EvDate, EDuration=@EvDuration where EId=@EvID", Con);
                     cmd.Parameters.AddWithValue("@EvDesc", EDescTb.Text);
                     cmd.Parameters.AddWithValue("@EvDate", EDate.Value.Date);
                     cmd.Parameters.AddWithValue("@EvDuration", EDurationTb.Text);
+                    cmd.Parameters.AddWithValue("@EvID", Key);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Event Updated");
                     Con.Close();
@@ -176,6 +177,55 @@ namespace uasSchoolProgram
 
 
             }
+        }
+
+        private void foreverButton1_Click(object sender, EventArgs e)
+        {
+            Student Obj = new Student();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void foreverButton2_Click(object sender, EventArgs e)
+        {
+            Teachers Obj = new Teachers();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void foreverButton3_Click(object sender, EventArgs e)
+        {
+            Attendance Obj = new Attendance();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void foreverButton4_Click(object sender, EventArgs e)
+        {
+            Events Obj = new Events();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void foreverButton5_Click(object sender, EventArgs e)
+        {
+            Dashboard Obj = new Dashboard();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void Fees_Click(object sender, EventArgs e)
+        {
+            Fees Obj = new Fees();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void foreverButton7_Click(object sender, EventArgs e)
+        {
+            MainMenu Obj = new MainMenu();
+            Obj.Show();
+            this.Hide();
         }
     }
 }
