@@ -28,22 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
-            progressBar1 = new ProgressBar();
+            components = new System.ComponentModel.Container();
+            myProgressBar = new ProgressBar();
             label1 = new Label();
             label2 = new Label();
             pictureBox1 = new PictureBox();
+            timer1 = new System.Windows.Forms.Timer(components);
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
-            // progressBar1
+            // myProgressBar
             // 
-            progressBar1.Enabled = false;
-            progressBar1.ForeColor = SystemColors.ControlDark;
-            progressBar1.Location = new Point(164, 317);
-            progressBar1.Name = "progressBar1";
-            progressBar1.RightToLeft = RightToLeft.Yes;
-            progressBar1.Size = new Size(486, 23);
-            progressBar1.TabIndex = 0;
+            myProgressBar.Enabled = false;
+            myProgressBar.ForeColor = SystemColors.ControlDark;
+            myProgressBar.Location = new Point(164, 317);
+            myProgressBar.Name = "myProgressBar";
+            myProgressBar.RightToLeft = RightToLeft.Yes;
+            myProgressBar.Size = new Size(486, 23);
+            myProgressBar.TabIndex = 0;
             // 
             // label1
             // 
@@ -79,6 +81,10 @@
             pictureBox1.TabIndex = 4;
             pictureBox1.TabStop = false;
             // 
+            // timer1
+            // 
+            timer1.Tick += timer1_Tick;
+            // 
             // LoadingForm
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -88,10 +94,11 @@
             Controls.Add(pictureBox1);
             Controls.Add(label2);
             Controls.Add(label1);
-            Controls.Add(progressBar1);
+            Controls.Add(myProgressBar);
             FormBorderStyle = FormBorderStyle.None;
             Name = "LoadingForm";
             Text = "Form1";
+            Load += LoadingForm_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -99,9 +106,10 @@
 
         #endregion
 
-        private ProgressBar progressBar1;
+        private ProgressBar myProgressBar;
         private Label label1;
         private Label label2;
         private PictureBox pictureBox1;
+        private System.Windows.Forms.Timer timer1;
     }
 }

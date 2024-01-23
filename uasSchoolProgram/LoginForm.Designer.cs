@@ -33,8 +33,8 @@
             label2 = new Label();
             label1 = new Label();
             label3 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            UNameTb = new TextBox();
+            PasswordTb = new TextBox();
             foreverButton1 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton2 = new ReaLTaiizor.Controls.ForeverButton();
             pictureBox2 = new PictureBox();
@@ -85,20 +85,20 @@
             label3.TabIndex = 8;
             label3.Text = "Password";
             // 
-            // textBox1
+            // UNameTb
             // 
-            textBox1.Location = new Point(299, 346);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(217, 23);
-            textBox1.TabIndex = 9;
-            textBox1.TextChanged += textBox1_TextChanged;
+            UNameTb.Location = new Point(299, 346);
+            UNameTb.Name = "UNameTb";
+            UNameTb.Size = new Size(217, 23);
+            UNameTb.TabIndex = 9;
+            UNameTb.TextChanged += textBox1_TextChanged;
             // 
-            // textBox2
+            // PasswordTb
             // 
-            textBox2.Location = new Point(299, 411);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(217, 23);
-            textBox2.TabIndex = 10;
+            PasswordTb.Location = new Point(299, 411);
+            PasswordTb.Name = "PasswordTb";
+            PasswordTb.Size = new Size(217, 23);
+            PasswordTb.TabIndex = 10;
             // 
             // foreverButton1
             // 
@@ -112,6 +112,7 @@
             foreverButton1.TabIndex = 13;
             foreverButton1.Text = "Login";
             foreverButton1.TextColor = Color.FromArgb(243, 243, 243);
+            foreverButton1.Click += foreverButton1_Click;
             // 
             // foreverButton2
             // 
@@ -125,6 +126,7 @@
             foreverButton2.TabIndex = 14;
             foreverButton2.Text = "Reset";
             foreverButton2.TextColor = Color.FromArgb(243, 243, 243);
+            foreverButton2.Click += foreverButton2_Click;
             // 
             // pictureBox2
             // 
@@ -136,6 +138,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 21;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // LoginForm
             // 
@@ -146,8 +149,8 @@
             Controls.Add(pictureBox2);
             Controls.Add(foreverButton2);
             Controls.Add(foreverButton1);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(PasswordTb);
+            Controls.Add(UNameTb);
             Controls.Add(label3);
             Controls.Add(pictureBox1);
             Controls.Add(label2);
@@ -167,8 +170,8 @@
         private Label label2;
         private Label label1;
         private Label label3;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private TextBox UNameTb;
+        private TextBox PasswordTb;
         private ReaLTaiizor.Controls.ForeverButton foreverButton1;
         private ReaLTaiizor.Controls.ForeverButton foreverButton2;
         private PictureBox pictureBox2;

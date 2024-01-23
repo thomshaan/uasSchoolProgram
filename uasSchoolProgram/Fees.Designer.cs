@@ -41,23 +41,24 @@
             foreverButton3 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton1 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton2 = new ReaLTaiizor.Controls.ForeverButton();
-            poisonComboBox1 = new ReaLTaiizor.Controls.PoisonComboBox();
+            StdIdCb = new ReaLTaiizor.Controls.PoisonComboBox();
             label3 = new Label();
             label4 = new Label();
-            textBox1 = new TextBox();
+            StNameTb = new TextBox();
             label7 = new Label();
-            dateTimePicker1 = new DateTimePicker();
+            PeriodDate = new DateTimePicker();
             label5 = new Label();
-            textBox2 = new TextBox();
-            dataGridView1 = new DataGridView();
-            hopeButton2 = new ReaLTaiizor.Controls.HopeButton();
-            hopeButton1 = new ReaLTaiizor.Controls.HopeButton();
+            AmountTb = new TextBox();
+            BackButton = new ReaLTaiizor.Controls.HopeButton();
             foreverButton7 = new ReaLTaiizor.Controls.ForeverButton();
+            EditBtn = new ReaLTaiizor.Controls.HopeButton();
+            AddBtn = new ReaLTaiizor.Controls.HopeButton();
+            FeesDGV = new DataGridView();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)FeesDGV).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -84,6 +85,7 @@
             pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox2.TabIndex = 21;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // label1
             // 
@@ -147,6 +149,7 @@
             foreverButton6.TabIndex = 62;
             foreverButton6.Text = "Fees";
             foreverButton6.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton6.Click += foreverButton6_Click_1;
             // 
             // foreverButton5
             // 
@@ -161,6 +164,7 @@
             foreverButton5.TabIndex = 61;
             foreverButton5.Text = "Dashboards";
             foreverButton5.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton5.Click += foreverButton5_Click_1;
             // 
             // foreverButton4
             // 
@@ -175,6 +179,7 @@
             foreverButton4.TabIndex = 60;
             foreverButton4.Text = "Events";
             foreverButton4.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton4.Click += foreverButton4_Click_1;
             // 
             // foreverButton3
             // 
@@ -189,6 +194,7 @@
             foreverButton3.TabIndex = 59;
             foreverButton3.Text = "Attendance";
             foreverButton3.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton3.Click += foreverButton3_Click_1;
             // 
             // foreverButton1
             // 
@@ -203,6 +209,7 @@
             foreverButton1.TabIndex = 57;
             foreverButton1.Text = "Students";
             foreverButton1.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton1.Click += foreverButton1_Click_1;
             // 
             // foreverButton2
             // 
@@ -217,16 +224,18 @@
             foreverButton2.TabIndex = 58;
             foreverButton2.Text = "Teachers";
             foreverButton2.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton2.Click += foreverButton2_Click_1;
             // 
-            // poisonComboBox1
+            // StdIdCb
             // 
-            poisonComboBox1.FormattingEnabled = true;
-            poisonComboBox1.ItemHeight = 23;
-            poisonComboBox1.Location = new Point(364, 131);
-            poisonComboBox1.Name = "poisonComboBox1";
-            poisonComboBox1.Size = new Size(150, 29);
-            poisonComboBox1.TabIndex = 64;
-            poisonComboBox1.UseSelectable = true;
+            StdIdCb.FormattingEnabled = true;
+            StdIdCb.ItemHeight = 23;
+            StdIdCb.Location = new Point(364, 131);
+            StdIdCb.Name = "StdIdCb";
+            StdIdCb.Size = new Size(150, 29);
+            StdIdCb.TabIndex = 64;
+            StdIdCb.UseSelectable = true;
+            StdIdCb.SelectionChangeCommitted += StdIdCb_SelectionChangeCommitted;
             // 
             // label3
             // 
@@ -254,13 +263,14 @@
             label4.TextAlign = ContentAlignment.MiddleCenter;
             label4.UseMnemonic = false;
             // 
-            // textBox1
+            // StNameTb
             // 
-            textBox1.Location = new Point(364, 186);
-            textBox1.Multiline = true;
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(150, 60);
-            textBox1.TabIndex = 75;
+            StNameTb.Enabled = false;
+            StNameTb.Location = new Point(364, 186);
+            StNameTb.Multiline = true;
+            StNameTb.Name = "StNameTb";
+            StNameTb.Size = new Size(150, 60);
+            StNameTb.TabIndex = 75;
             // 
             // label7
             // 
@@ -275,12 +285,12 @@
             label7.TextAlign = ContentAlignment.MiddleCenter;
             label7.UseMnemonic = false;
             // 
-            // dateTimePicker1
+            // PeriodDate
             // 
-            dateTimePicker1.Location = new Point(624, 135);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(184, 23);
-            dateTimePicker1.TabIndex = 76;
+            PeriodDate.Location = new Point(624, 135);
+            PeriodDate.Name = "PeriodDate";
+            PeriodDate.Size = new Size(184, 23);
+            PeriodDate.TabIndex = 76;
             // 
             // label5
             // 
@@ -295,60 +305,33 @@
             label5.TextAlign = ContentAlignment.MiddleCenter;
             label5.UseMnemonic = false;
             // 
-            // textBox2
+            // AmountTb
             // 
-            textBox2.Location = new Point(624, 186);
-            textBox2.Multiline = true;
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(184, 60);
-            textBox2.TabIndex = 79;
+            AmountTb.Location = new Point(624, 186);
+            AmountTb.Multiline = true;
+            AmountTb.Name = "AmountTb";
+            AmountTb.Size = new Size(184, 60);
+            AmountTb.TabIndex = 79;
             // 
-            // dataGridView1
+            // BackButton
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(214, 307);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(647, 303);
-            dataGridView1.TabIndex = 80;
-            // 
-            // hopeButton2
-            // 
-            hopeButton2.BorderColor = Color.FromArgb(220, 223, 230);
-            hopeButton2.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            hopeButton2.DangerColor = Color.FromArgb(245, 108, 108);
-            hopeButton2.DefaultColor = Color.FromArgb(255, 255, 255);
-            hopeButton2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            hopeButton2.HoverTextColor = Color.FromArgb(48, 49, 51);
-            hopeButton2.InfoColor = Color.FromArgb(144, 147, 153);
-            hopeButton2.Location = new Point(408, 263);
-            hopeButton2.Name = "hopeButton2";
-            hopeButton2.PrimaryColor = Color.FromArgb(148, 115, 96);
-            hopeButton2.Size = new Size(108, 28);
-            hopeButton2.SuccessColor = Color.FromArgb(103, 194, 58);
-            hopeButton2.TabIndex = 82;
-            hopeButton2.Text = "Back";
-            hopeButton2.TextColor = Color.White;
-            hopeButton2.WarningColor = Color.FromArgb(230, 162, 60);
-            // 
-            // hopeButton1
-            // 
-            hopeButton1.BorderColor = Color.FromArgb(220, 223, 230);
-            hopeButton1.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            hopeButton1.DangerColor = Color.FromArgb(245, 108, 108);
-            hopeButton1.DefaultColor = Color.FromArgb(255, 255, 255);
-            hopeButton1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            hopeButton1.HoverTextColor = Color.FromArgb(48, 49, 51);
-            hopeButton1.InfoColor = Color.FromArgb(144, 147, 153);
-            hopeButton1.Location = new Point(556, 263);
-            hopeButton1.Name = "hopeButton1";
-            hopeButton1.PrimaryColor = Color.FromArgb(255, 128, 0);
-            hopeButton1.Size = new Size(108, 28);
-            hopeButton1.SuccessColor = Color.FromArgb(103, 194, 58);
-            hopeButton1.TabIndex = 81;
-            hopeButton1.Text = "Pay Fees";
-            hopeButton1.TextColor = Color.White;
-            hopeButton1.WarningColor = Color.FromArgb(230, 162, 60);
+            BackButton.BorderColor = Color.FromArgb(220, 223, 230);
+            BackButton.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            BackButton.DangerColor = Color.FromArgb(245, 108, 108);
+            BackButton.DefaultColor = Color.FromArgb(255, 255, 255);
+            BackButton.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            BackButton.HoverTextColor = Color.FromArgb(48, 49, 51);
+            BackButton.InfoColor = Color.FromArgb(144, 147, 153);
+            BackButton.Location = new Point(602, 263);
+            BackButton.Name = "BackButton";
+            BackButton.PrimaryColor = Color.FromArgb(148, 115, 96);
+            BackButton.Size = new Size(108, 28);
+            BackButton.SuccessColor = Color.FromArgb(103, 194, 58);
+            BackButton.TabIndex = 82;
+            BackButton.Text = "Back";
+            BackButton.TextColor = Color.White;
+            BackButton.WarningColor = Color.FromArgb(230, 162, 60);
+            BackButton.Click += BackButton_Click;
             // 
             // foreverButton7
             // 
@@ -363,6 +346,64 @@
             foreverButton7.TabIndex = 53;
             foreverButton7.Text = "Main Menu";
             foreverButton7.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton7.Click += foreverButton7_Click_1;
+            // 
+            // EditBtn
+            // 
+            EditBtn.BorderColor = Color.FromArgb(220, 223, 230);
+            EditBtn.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            EditBtn.DangerColor = Color.FromArgb(245, 108, 108);
+            EditBtn.DefaultColor = Color.FromArgb(255, 255, 255);
+            EditBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            EditBtn.HoverTextColor = Color.FromArgb(48, 49, 51);
+            EditBtn.InfoColor = Color.FromArgb(144, 147, 153);
+            EditBtn.Location = new Point(348, 263);
+            EditBtn.Name = "EditBtn";
+            EditBtn.PrimaryColor = Color.FromArgb(148, 115, 96);
+            EditBtn.Size = new Size(108, 28);
+            EditBtn.SuccessColor = Color.FromArgb(103, 194, 58);
+            EditBtn.TabIndex = 83;
+            EditBtn.Text = "Edit";
+            EditBtn.TextColor = Color.White;
+            EditBtn.WarningColor = Color.FromArgb(230, 162, 60);
+            EditBtn.Click += hopeButton3_Click;
+            // 
+            // AddBtn
+            // 
+            AddBtn.BorderColor = Color.FromArgb(220, 223, 230);
+            AddBtn.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            AddBtn.DangerColor = Color.FromArgb(245, 108, 108);
+            AddBtn.DefaultColor = Color.FromArgb(255, 255, 255);
+            AddBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            AddBtn.HoverTextColor = Color.FromArgb(48, 49, 51);
+            AddBtn.InfoColor = Color.FromArgb(144, 147, 153);
+            AddBtn.Location = new Point(474, 263);
+            AddBtn.Name = "AddBtn";
+            AddBtn.PrimaryColor = Color.FromArgb(255, 128, 0);
+            AddBtn.Size = new Size(108, 28);
+            AddBtn.SuccessColor = Color.FromArgb(103, 194, 58);
+            AddBtn.TabIndex = 84;
+            AddBtn.Text = "Payment";
+            AddBtn.TextColor = Color.White;
+            AddBtn.WarningColor = Color.FromArgb(230, 162, 60);
+            AddBtn.Click += hopeButton4_Click;
+            // 
+            // FeesDGV
+            // 
+            FeesDGV.AllowUserToAddRows = false;
+            FeesDGV.AllowUserToDeleteRows = false;
+            FeesDGV.BackgroundColor = Color.FromArgb(148, 115, 96);
+            FeesDGV.ColumnHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            FeesDGV.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            FeesDGV.GridColor = SystemColors.ButtonFace;
+            FeesDGV.Location = new Point(218, 314);
+            FeesDGV.Name = "FeesDGV";
+            FeesDGV.ReadOnly = true;
+            FeesDGV.RowHeadersBorderStyle = DataGridViewHeaderBorderStyle.None;
+            FeesDGV.RowTemplate.Height = 25;
+            FeesDGV.Size = new Size(632, 280);
+            FeesDGV.TabIndex = 104;
+            FeesDGV.CellContentClick += FeesDGV_CellContentClick;
             // 
             // Fees
             // 
@@ -370,18 +411,19 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(881, 622);
+            Controls.Add(FeesDGV);
+            Controls.Add(AddBtn);
+            Controls.Add(EditBtn);
             Controls.Add(foreverButton7);
-            Controls.Add(hopeButton2);
-            Controls.Add(hopeButton1);
-            Controls.Add(dataGridView1);
-            Controls.Add(textBox2);
+            Controls.Add(BackButton);
+            Controls.Add(AmountTb);
             Controls.Add(label5);
             Controls.Add(label7);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(textBox1);
+            Controls.Add(PeriodDate);
+            Controls.Add(StNameTb);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(poisonComboBox1);
+            Controls.Add(StdIdCb);
             Controls.Add(foreverButton6);
             Controls.Add(foreverButton5);
             Controls.Add(foreverButton4);
@@ -398,7 +440,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)FeesDGV).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -416,18 +458,19 @@
         private ReaLTaiizor.Controls.ForeverButton foreverButton3;
         private ReaLTaiizor.Controls.ForeverButton foreverButton1;
         private ReaLTaiizor.Controls.ForeverButton foreverButton2;
-        private ReaLTaiizor.Controls.PoisonComboBox poisonComboBox1;
+        private ReaLTaiizor.Controls.PoisonComboBox StdIdCb;
         private Label label3;
         private Label label4;
-        private TextBox textBox1;
+        private TextBox StNameTb;
         private Label label7;
-        private DateTimePicker dateTimePicker1;
+        private DateTimePicker PeriodDate;
         private Label label5;
-        private TextBox textBox2;
-        private DataGridView dataGridView1;
-        private ReaLTaiizor.Controls.HopeButton hopeButton2;
-        private ReaLTaiizor.Controls.HopeButton hopeButton1;
+        private TextBox AmountTb;
+        private ReaLTaiizor.Controls.HopeButton BackButton;
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.ForeverButton foreverButton7;
+        private ReaLTaiizor.Controls.HopeButton EditBtn;
+        private ReaLTaiizor.Controls.HopeButton AddBtn;
+        private DataGridView FeesDGV;
     }
 }

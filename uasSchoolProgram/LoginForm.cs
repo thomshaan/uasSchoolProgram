@@ -26,5 +26,36 @@ namespace uasSchoolProgram
         {
 
         }
+
+        private void foreverButton1_Click(object sender, EventArgs e)
+        {
+            if(UNameTb.Text == "" || PasswordTb.Text=="")
+            {
+                MessageBox.Show("Enter Username and Password");
+            }
+            else if(UNameTb.Text =="Admin" && PasswordTb.Text == "Password")
+            {
+                MainMenu Obj = new MainMenu();
+                Obj.Show();
+                this.Hide();
+            }
+            else
+            {
+                MessageBox.Show("Wrong Username or Password");
+                UNameTb.Text = "";
+                PasswordTb.Text = "";
+            }
+        }
+
+        private void foreverButton2_Click(object sender, EventArgs e)
+        {
+            UNameTb.Text = "";
+            PasswordTb.Text  = "";
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

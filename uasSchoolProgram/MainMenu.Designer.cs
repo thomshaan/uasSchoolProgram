@@ -36,15 +36,10 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
             pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             pictureBox7 = new PictureBox();
             label4 = new Label();
-            label5 = new Label();
-            label6 = new Label();
-            label8 = new Label();
-            label9 = new Label();
             pictureBox9 = new PictureBox();
             foreverButton1 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton2 = new ReaLTaiizor.Controls.ForeverButton();
@@ -52,18 +47,26 @@
             foreverButton4 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton5 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton6 = new ReaLTaiizor.Controls.ForeverButton();
-            label3 = new Label();
             foreverButton7 = new ReaLTaiizor.Controls.ForeverButton();
+            pictureBox4 = new PictureBox();
+            pictureBox10 = new PictureBox();
+            label7 = new Label();
+            label3 = new Label();
+            label8 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            label9 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -130,99 +133,68 @@
             // 
             // pictureBox2
             // 
+            pictureBox2.Image = Properties.Resources.icons8_student_100;
             pictureBox2.Location = new Point(264, 139);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(138, 126);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 9;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox3
             // 
+            pictureBox3.Image = Properties.Resources.icons8_students_100;
             pictureBox3.Location = new Point(487, 139);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(138, 126);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 10;
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
-            // pictureBox4
-            // 
-            pictureBox4.Location = new Point(708, 139);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(138, 126);
-            pictureBox4.TabIndex = 11;
-            pictureBox4.TabStop = false;
-            // 
             // pictureBox5
             // 
+            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
             pictureBox5.Location = new Point(708, 318);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(138, 126);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox5.TabIndex = 14;
             pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
             // 
             // pictureBox6
             // 
+            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
             pictureBox6.Location = new Point(487, 318);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(138, 126);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 13;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // pictureBox7
             // 
+            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
             pictureBox7.Location = new Point(264, 318);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(138, 126);
+            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox7.TabIndex = 12;
             pictureBox7.TabStop = false;
+            pictureBox7.Click += pictureBox7_Click;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(304, 279);
+            label4.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(274, 268);
             label4.Name = "label4";
-            label4.Size = new Size(53, 15);
+            label4.Size = new Size(115, 33);
             label4.TabIndex = 15;
             label4.Text = "Students";
-            // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Location = new Point(529, 279);
-            label5.Name = "label5";
-            label5.Size = new Size(52, 15);
-            label5.TabIndex = 16;
-            label5.Text = "Teachers";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Location = new Point(746, 279);
-            label6.Name = "label6";
-            label6.Size = new Size(68, 15);
-            label6.TabIndex = 17;
-            label6.Text = "Attendance";
-            // 
-            // label8
-            // 
-            label8.AutoSize = true;
-            label8.Location = new Point(520, 460);
-            label8.Name = "label8";
-            label8.Size = new Size(69, 15);
-            label8.TabIndex = 19;
-            label8.Text = "Dashboards";
-            label8.TextAlign = ContentAlignment.MiddleCenter;
-            // 
-            // label9
-            // 
-            label9.AutoSize = true;
-            label9.Location = new Point(764, 460);
-            label9.Name = "label9";
-            label9.Size = new Size(30, 15);
-            label9.TabIndex = 19;
-            label9.Text = "Fees";
-            label9.TextAlign = ContentAlignment.MiddleCenter;
             // 
             // pictureBox9
             // 
@@ -325,16 +297,6 @@
             foreverButton6.TextColor = Color.FromArgb(148, 115, 96);
             foreverButton6.Click += foreverButton6_Click;
             // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(304, 460);
-            label3.Name = "label3";
-            label3.Size = new Size(41, 15);
-            label3.TabIndex = 27;
-            label3.Text = "Events";
-            label3.TextAlign = ContentAlignment.MiddleCenter;
-            // 
             // foreverButton7
             // 
             foreverButton7.BackColor = Color.Transparent;
@@ -350,14 +312,106 @@
             foreverButton7.TextColor = Color.FromArgb(148, 115, 96);
             foreverButton7.Click += foreverButton7_Click;
             // 
+            // pictureBox4
+            // 
+            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
+            pictureBox4.Location = new Point(708, 139);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(138, 126);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 54;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
+            // 
+            // pictureBox10
+            // 
+            pictureBox10.BackColor = Color.FromArgb(148, 115, 96);
+            pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
+            pictureBox10.Location = new Point(46, 484);
+            pictureBox10.Name = "pictureBox10";
+            pictureBox10.Size = new Size(97, 79);
+            pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox10.TabIndex = 55;
+            pictureBox10.TabStop = false;
+            pictureBox10.Click += pictureBox10_Click;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.BackColor = Color.FromArgb(148, 115, 96);
+            label7.Font = new Font("Plus Jakarta Sans Medium", 9.749999F, FontStyle.Bold, GraphicsUnit.Point);
+            label7.ForeColor = Color.Transparent;
+            label7.Location = new Point(62, 566);
+            label7.Name = "label7";
+            label7.Size = new Size(68, 21);
+            label7.TabIndex = 56;
+            label7.Text = "Log Out";
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(288, 447);
+            label3.Name = "label3";
+            label3.Size = new Size(89, 33);
+            label3.TabIndex = 57;
+            label3.Text = "Events";
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.Location = new Point(489, 447);
+            label8.Name = "label8";
+            label8.Size = new Size(136, 33);
+            label8.TabIndex = 58;
+            label8.Text = "Dashboard";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.Location = new Point(500, 268);
+            label5.Name = "label5";
+            label5.Size = new Size(114, 33);
+            label5.TabIndex = 59;
+            label5.Text = "Teachers";
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.Location = new Point(708, 268);
+            label6.Name = "label6";
+            label6.Size = new Size(143, 33);
+            label6.TabIndex = 60;
+            label6.Text = "Attendance";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.Location = new Point(747, 447);
+            label9.Name = "label9";
+            label9.Size = new Size(68, 33);
+            label9.TabIndex = 61;
+            label9.Text = "Fees";
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(892, 607);
-            Controls.Add(foreverButton7);
+            Controls.Add(label9);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label8);
             Controls.Add(label3);
+            Controls.Add(label7);
+            Controls.Add(pictureBox10);
+            Controls.Add(pictureBox4);
+            Controls.Add(foreverButton7);
             Controls.Add(foreverButton6);
             Controls.Add(foreverButton5);
             Controls.Add(foreverButton4);
@@ -365,15 +419,10 @@
             Controls.Add(foreverButton2);
             Controls.Add(foreverButton1);
             Controls.Add(pictureBox9);
-            Controls.Add(label9);
-            Controls.Add(label8);
-            Controls.Add(label6);
-            Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(pictureBox5);
             Controls.Add(pictureBox6);
             Controls.Add(pictureBox7);
-            Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
             Controls.Add(panel1);
@@ -386,11 +435,12 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -403,15 +453,10 @@
         private Label label2;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
         private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private PictureBox pictureBox7;
         private Label label4;
-        private Label label5;
-        private Label label6;
-        private Label label8;
-        private Label label9;
         private PictureBox pictureBox9;
         private ReaLTaiizor.Controls.ForeverButton foreverButton1;
         private ReaLTaiizor.Controls.ForeverButton foreverButton2;
@@ -419,8 +464,15 @@
         private ReaLTaiizor.Controls.ForeverButton foreverButton4;
         private ReaLTaiizor.Controls.ForeverButton foreverButton5;
         private ReaLTaiizor.Controls.ForeverButton foreverButton6;
-        private Label label3;
         private PictureBox pictureBox8;
         private ReaLTaiizor.Controls.ForeverButton foreverButton7;
+        private PictureBox pictureBox4;
+        private PictureBox pictureBox10;
+        private Label label7;
+        private Label label3;
+        private Label label8;
+        private Label label5;
+        private Label label6;
+        private Label label9;
     }
 }

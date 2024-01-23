@@ -81,7 +81,52 @@ namespace uasSchoolProgram
 
         private void pictureBox3_Click(object sender, EventArgs e)
         {
+            Teachers obj = new Teachers();
+            obj.Show();
+            this.Hide();
 
+        }
+
+        private void pictureBox2_Click(object sender, EventArgs e)
+        {
+            Student obj = new Student();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Attendance obj = new Attendance();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox7_Click(object sender, EventArgs e)
+        {
+            Events obj = new Events();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Dashboard obj = new Dashboard();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Fees obj = new Fees();
+            obj.Show();
+            this.Hide();
+        }
+
+        private void pictureBox10_Click(object sender, EventArgs e)
+        {
+            LoginForm obj = new LoginForm();
+            obj.Show();
+            this.Hide();    
         }
     }
 }
