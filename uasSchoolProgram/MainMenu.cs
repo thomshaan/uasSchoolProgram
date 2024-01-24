@@ -126,7 +126,14 @@ namespace uasSchoolProgram
         {
             LoginForm obj = new LoginForm();
             obj.Show();
-            this.Hide();    
+            this.Hide();
+        }
+
+        private void foreverButton8_Click(object sender, EventArgs e)
+        {
+            Class Obj = new Class();
+            Obj.Show();
+            this.Hide();
         }
     }
 }

@@ -61,6 +61,7 @@ namespace uasSchoolProgram
             foreach (DataRow dr in dt.Rows)
             {
                 StNameTb.Text = dr["StName"].ToString();
+                AmountTb.Text = dr["StFees"].ToString();
             }
 
             Con.Close();
@@ -243,6 +244,13 @@ namespace uasSchoolProgram
         {
             MainMenu obj = new MainMenu();
             obj.Show();
+            this.Hide();
+        }
+
+        private void foreverButton8_Click(object sender, EventArgs e)
+        {
+            Class Obj = new Class();
+            Obj.Show();
             this.Hide();
         }
     }

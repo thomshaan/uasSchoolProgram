@@ -64,6 +64,7 @@
             label11 = new Label();
             StudentDGV = new DataGridView();
             foreverButton7 = new ReaLTaiizor.Controls.ForeverButton();
+            foreverButton8 = new ReaLTaiizor.Controls.ForeverButton();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -520,7 +521,7 @@
             foreverButton7.BackgroundImageLayout = ImageLayout.None;
             foreverButton7.BaseColor = Color.FromArgb(247, 236, 208);
             foreverButton7.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton7.Location = new Point(0, 424);
+            foreverButton7.Location = new Point(0, 475);
             foreverButton7.Name = "foreverButton7";
             foreverButton7.Rounded = false;
             foreverButton7.Size = new Size(185, 45);
@@ -529,12 +530,28 @@
             foreverButton7.TextColor = Color.FromArgb(148, 115, 96);
             foreverButton7.Click += foreverButton7_Click;
             // 
+            // foreverButton8
+            // 
+            foreverButton8.BackColor = Color.Transparent;
+            foreverButton8.BackgroundImageLayout = ImageLayout.None;
+            foreverButton8.BaseColor = Color.FromArgb(247, 236, 208);
+            foreverButton8.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            foreverButton8.Location = new Point(0, 424);
+            foreverButton8.Name = "foreverButton8";
+            foreverButton8.Rounded = false;
+            foreverButton8.Size = new Size(185, 45);
+            foreverButton8.TabIndex = 99;
+            foreverButton8.Text = "Class";
+            foreverButton8.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton8.Click += foreverButton8_Click;
+            // 
             // Student
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(895, 612);
+            Controls.Add(foreverButton8);
             Controls.Add(foreverButton7);
             Controls.Add(StudentDGV);
             Controls.Add(label11);
@@ -613,5 +630,6 @@
         private Label label11;
         private DataGridView StudentDGV;
         private ReaLTaiizor.Controls.ForeverButton foreverButton7;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton8;
     }
 }

@@ -55,6 +55,7 @@
             AttDatePicker = new DateTimePicker();
             foreverButton7 = new ReaLTaiizor.Controls.ForeverButton();
             AttendanceDGV = new DataGridView();
+            foreverButton8 = new ReaLTaiizor.Controls.ForeverButton();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -328,7 +329,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ActiveCaptionText;
+            label3.ForeColor = Color.FromArgb(148, 115, 96);
             label3.Location = new Point(260, 136);
             label3.Name = "label3";
             label3.Size = new Size(92, 25);
@@ -341,7 +342,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.ActiveCaptionText;
+            label4.ForeColor = Color.FromArgb(148, 115, 96);
             label4.Location = new Point(572, 136);
             label4.Name = "label4";
             label4.Size = new Size(60, 25);
@@ -363,7 +364,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = SystemColors.ActiveCaptionText;
+            label5.ForeColor = Color.FromArgb(148, 115, 96);
             label5.Location = new Point(230, 184);
             label5.Name = "label5";
             label5.Size = new Size(122, 25);
@@ -376,7 +377,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = SystemColors.ActiveCaptionText;
+            label6.ForeColor = Color.FromArgb(148, 115, 96);
             label6.Location = new Point(572, 180);
             label6.Name = "label6";
             label6.Size = new Size(49, 25);
@@ -398,7 +399,7 @@
             foreverButton7.BackgroundImageLayout = ImageLayout.None;
             foreverButton7.BaseColor = Color.FromArgb(247, 236, 208);
             foreverButton7.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton7.Location = new Point(0, 419);
+            foreverButton7.Location = new Point(0, 470);
             foreverButton7.Name = "foreverButton7";
             foreverButton7.Rounded = false;
             foreverButton7.Size = new Size(185, 45);
@@ -425,12 +426,28 @@
             AttendanceDGV.TabIndex = 99;
             AttendanceDGV.CellContentClick += AttendanceDGV_CellContentClick;
             // 
+            // foreverButton8
+            // 
+            foreverButton8.BackColor = Color.Transparent;
+            foreverButton8.BackgroundImageLayout = ImageLayout.None;
+            foreverButton8.BaseColor = Color.FromArgb(247, 236, 208);
+            foreverButton8.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            foreverButton8.Location = new Point(0, 419);
+            foreverButton8.Name = "foreverButton8";
+            foreverButton8.Rounded = false;
+            foreverButton8.Size = new Size(185, 45);
+            foreverButton8.TabIndex = 100;
+            foreverButton8.Text = "Class";
+            foreverButton8.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton8.Click += foreverButton8_Click;
+            // 
             // Attendance
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(877, 629);
+            Controls.Add(foreverButton8);
             Controls.Add(AttendanceDGV);
             Controls.Add(foreverButton7);
             Controls.Add(AttDatePicker);
@@ -494,5 +511,6 @@
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.ForeverButton foreverButton7;
         private DataGridView AttendanceDGV;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton8;
     }
 }

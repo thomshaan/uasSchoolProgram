@@ -268,5 +268,12 @@ namespace uasSchoolProgram
             Obj.Show();
             this.Hide();
         }
+
+        private void foreverButton8_Click(object sender, EventArgs e)
+        {
+            Class Obj = new Class();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }

@@ -227,5 +227,17 @@ namespace uasSchoolProgram
             Obj.Show();
             this.Hide();
         }
+
+        private void EDate_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void foreverButton8_Click(object sender, EventArgs e)
+        {
+            Class Obj = new Class();
+            Obj.Show();
+            this.Hide();
+        }
     }
 }

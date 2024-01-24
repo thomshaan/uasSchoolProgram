@@ -108,13 +108,14 @@ namespace uasSchoolProgram
                 try
                 {
                     Con.Open();
-                    SqlCommand cmd = new SqlCommand("Update StudentTbl set StName=@Sname, StGen=@SGen, StDOB=@SDob, StClass=@SClass, StFees = @SFees, StAdd=@SAdd ", Con);
+                    SqlCommand cmd = new SqlCommand("Update StudentTbl set StName=@Sname, StGen=@SGen, StDOB=@SDob, StClass=@SClass, StFees = @SFees, StAdd=@SAdd where StId=@StID ", Con);
                     cmd.Parameters.AddWithValue("@Sname", StNameTb.Text);
                     cmd.Parameters.AddWithValue("@SGen", StGenCb.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@SDob", DOBPicker.Value.Date);
                     cmd.Parameters.AddWithValue("@SClass", ClassCb.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@SFees", FeesTb.Text);
                     cmd.Parameters.AddWithValue("@SAdd", AddressTb.Text);
+                    cmd.Parameters.AddWithValue("StID", Key);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("Student Updated");
                     Con.Close();
@@ -241,6 +242,13 @@ namespace uasSchoolProgram
         private void foreverButton7_Click(object sender, EventArgs e)
         {
             MainMenu Obj = new MainMenu();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void foreverButton8_Click(object sender, EventArgs e)
+        {
+            Class Obj = new Class();
             Obj.Show();
             this.Hide();
         }

@@ -57,6 +57,7 @@
             // 
             label2.AutoSize = true;
             label2.Font = new Font("Nohemi", 18F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.ForeColor = Color.FromArgb(148, 115, 96);
             label2.Location = new Point(272, 284);
             label2.Name = "label2";
             label2.Size = new Size(244, 22);
@@ -107,7 +108,7 @@
             foreverButton1.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             foreverButton1.Location = new Point(396, 468);
             foreverButton1.Name = "foreverButton1";
-            foreverButton1.Rounded = false;
+            foreverButton1.Rounded = true;
             foreverButton1.Size = new Size(120, 40);
             foreverButton1.TabIndex = 13;
             foreverButton1.Text = "Login";
@@ -121,7 +122,7 @@
             foreverButton2.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
             foreverButton2.Location = new Point(299, 468);
             foreverButton2.Name = "foreverButton2";
-            foreverButton2.Rounded = false;
+            foreverButton2.Rounded = true;
             foreverButton2.Size = new Size(80, 40);
             foreverButton2.TabIndex = 14;
             foreverButton2.Text = "Reset";

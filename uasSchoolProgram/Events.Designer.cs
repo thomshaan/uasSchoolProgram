@@ -53,6 +53,7 @@
             foreverButton2 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton7 = new ReaLTaiizor.Controls.ForeverButton();
             EventsDGV = new DataGridView();
+            foreverButton8 = new ReaLTaiizor.Controls.ForeverButton();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -146,7 +147,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = SystemColors.ActiveCaptionText;
+            label7.ForeColor = Color.FromArgb(148, 115, 96);
             label7.Location = new Point(553, 125);
             label7.Name = "label7";
             label7.Size = new Size(133, 25);
@@ -161,12 +162,13 @@
             EDate.Name = "EDate";
             EDate.Size = new Size(160, 23);
             EDate.TabIndex = 99;
+            EDate.ValueChanged += EDate_ValueChanged;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label6.ForeColor = SystemColors.ActiveCaptionText;
+            label6.ForeColor = Color.FromArgb(148, 115, 96);
             label6.Location = new Point(259, 214);
             label6.Name = "label6";
             label6.Size = new Size(57, 25);
@@ -179,7 +181,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = SystemColors.ActiveCaptionText;
+            label5.ForeColor = Color.FromArgb(148, 115, 96);
             label5.Location = new Point(259, 125);
             label5.Name = "label5";
             label5.Size = new Size(63, 25);
@@ -372,7 +374,7 @@
             foreverButton7.BackgroundImageLayout = ImageLayout.None;
             foreverButton7.BaseColor = Color.FromArgb(247, 236, 208);
             foreverButton7.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton7.Location = new Point(0, 418);
+            foreverButton7.Location = new Point(0, 469);
             foreverButton7.Name = "foreverButton7";
             foreverButton7.Rounded = false;
             foreverButton7.Size = new Size(185, 45);
@@ -398,12 +400,28 @@
             EventsDGV.TabIndex = 103;
             EventsDGV.CellContentClick += EventsDGV_CellContentClick;
             // 
+            // foreverButton8
+            // 
+            foreverButton8.BackColor = Color.Transparent;
+            foreverButton8.BackgroundImageLayout = ImageLayout.None;
+            foreverButton8.BaseColor = Color.FromArgb(247, 236, 208);
+            foreverButton8.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            foreverButton8.Location = new Point(0, 418);
+            foreverButton8.Name = "foreverButton8";
+            foreverButton8.Rounded = false;
+            foreverButton8.Size = new Size(185, 45);
+            foreverButton8.TabIndex = 104;
+            foreverButton8.Text = "Class";
+            foreverButton8.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton8.Click += foreverButton8_Click;
+            // 
             // Events
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(900, 623);
+            Controls.Add(foreverButton8);
             Controls.Add(EventsDGV);
             Controls.Add(foreverButton7);
             Controls.Add(EDurationTb);
@@ -463,5 +481,6 @@
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.ForeverButton foreverButton7;
         private DataGridView EventsDGV;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton8;
     }
 }

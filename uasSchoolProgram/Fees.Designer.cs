@@ -51,9 +51,10 @@
             AmountTb = new TextBox();
             BackButton = new ReaLTaiizor.Controls.HopeButton();
             foreverButton7 = new ReaLTaiizor.Controls.ForeverButton();
-            EditBtn = new ReaLTaiizor.Controls.HopeButton();
+            DeleteBtn = new ReaLTaiizor.Controls.HopeButton();
             AddBtn = new ReaLTaiizor.Controls.HopeButton();
             FeesDGV = new DataGridView();
+            foreverButton8 = new ReaLTaiizor.Controls.ForeverButton();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -241,7 +242,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.ForeColor = SystemColors.ActiveCaptionText;
+            label3.ForeColor = Color.FromArgb(148, 115, 96);
             label3.Location = new Point(258, 131);
             label3.Name = "label3";
             label3.Size = new Size(91, 25);
@@ -254,7 +255,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label4.ForeColor = SystemColors.ActiveCaptionText;
+            label4.ForeColor = Color.FromArgb(148, 115, 96);
             label4.Location = new Point(227, 182);
             label4.Name = "label4";
             label4.Size = new Size(122, 25);
@@ -276,7 +277,7 @@
             // 
             label7.AutoSize = true;
             label7.Font = new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label7.ForeColor = SystemColors.ActiveCaptionText;
+            label7.ForeColor = Color.FromArgb(148, 115, 96);
             label7.Location = new Point(556, 133);
             label7.Name = "label7";
             label7.Size = new Size(62, 25);
@@ -296,7 +297,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Plus Jakarta Sans", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            label5.ForeColor = SystemColors.ActiveCaptionText;
+            label5.ForeColor = Color.FromArgb(148, 115, 96);
             label5.Location = new Point(547, 182);
             label5.Name = "label5";
             label5.Size = new Size(71, 25);
@@ -339,7 +340,7 @@
             foreverButton7.BackgroundImageLayout = ImageLayout.None;
             foreverButton7.BaseColor = Color.FromArgb(247, 236, 208);
             foreverButton7.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton7.Location = new Point(0, 416);
+            foreverButton7.Location = new Point(0, 467);
             foreverButton7.Name = "foreverButton7";
             foreverButton7.Rounded = false;
             foreverButton7.Size = new Size(185, 45);
@@ -348,25 +349,25 @@
             foreverButton7.TextColor = Color.FromArgb(148, 115, 96);
             foreverButton7.Click += foreverButton7_Click_1;
             // 
-            // EditBtn
+            // DeleteBtn
             // 
-            EditBtn.BorderColor = Color.FromArgb(220, 223, 230);
-            EditBtn.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
-            EditBtn.DangerColor = Color.FromArgb(245, 108, 108);
-            EditBtn.DefaultColor = Color.FromArgb(255, 255, 255);
-            EditBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
-            EditBtn.HoverTextColor = Color.FromArgb(48, 49, 51);
-            EditBtn.InfoColor = Color.FromArgb(144, 147, 153);
-            EditBtn.Location = new Point(348, 263);
-            EditBtn.Name = "EditBtn";
-            EditBtn.PrimaryColor = Color.FromArgb(148, 115, 96);
-            EditBtn.Size = new Size(108, 28);
-            EditBtn.SuccessColor = Color.FromArgb(103, 194, 58);
-            EditBtn.TabIndex = 83;
-            EditBtn.Text = "Edit";
-            EditBtn.TextColor = Color.White;
-            EditBtn.WarningColor = Color.FromArgb(230, 162, 60);
-            EditBtn.Click += hopeButton3_Click;
+            DeleteBtn.BorderColor = Color.FromArgb(220, 223, 230);
+            DeleteBtn.ButtonType = ReaLTaiizor.Util.HopeButtonType.Primary;
+            DeleteBtn.DangerColor = Color.FromArgb(245, 108, 108);
+            DeleteBtn.DefaultColor = Color.FromArgb(255, 255, 255);
+            DeleteBtn.Font = new Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point);
+            DeleteBtn.HoverTextColor = Color.FromArgb(48, 49, 51);
+            DeleteBtn.InfoColor = Color.FromArgb(144, 147, 153);
+            DeleteBtn.Location = new Point(345, 263);
+            DeleteBtn.Name = "DeleteBtn";
+            DeleteBtn.PrimaryColor = Color.FromArgb(148, 115, 96);
+            DeleteBtn.Size = new Size(108, 28);
+            DeleteBtn.SuccessColor = Color.FromArgb(103, 194, 58);
+            DeleteBtn.TabIndex = 83;
+            DeleteBtn.Text = "Delete";
+            DeleteBtn.TextColor = Color.White;
+            DeleteBtn.WarningColor = Color.FromArgb(230, 162, 60);
+            DeleteBtn.Click += hopeButton3_Click;
             // 
             // AddBtn
             // 
@@ -405,15 +406,31 @@
             FeesDGV.TabIndex = 104;
             FeesDGV.CellContentClick += FeesDGV_CellContentClick;
             // 
+            // foreverButton8
+            // 
+            foreverButton8.BackColor = Color.Transparent;
+            foreverButton8.BackgroundImageLayout = ImageLayout.None;
+            foreverButton8.BaseColor = Color.FromArgb(247, 236, 208);
+            foreverButton8.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            foreverButton8.Location = new Point(0, 416);
+            foreverButton8.Name = "foreverButton8";
+            foreverButton8.Rounded = false;
+            foreverButton8.Size = new Size(185, 45);
+            foreverButton8.TabIndex = 105;
+            foreverButton8.Text = "Class";
+            foreverButton8.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton8.Click += foreverButton8_Click;
+            // 
             // Fees
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(881, 622);
+            Controls.Add(foreverButton8);
             Controls.Add(FeesDGV);
             Controls.Add(AddBtn);
-            Controls.Add(EditBtn);
+            Controls.Add(DeleteBtn);
             Controls.Add(foreverButton7);
             Controls.Add(BackButton);
             Controls.Add(AmountTb);
@@ -469,8 +486,9 @@
         private ReaLTaiizor.Controls.HopeButton BackButton;
         private PictureBox pictureBox2;
         private ReaLTaiizor.Controls.ForeverButton foreverButton7;
-        private ReaLTaiizor.Controls.HopeButton EditBtn;
+        private ReaLTaiizor.Controls.HopeButton DeleteBtn;
         private ReaLTaiizor.Controls.HopeButton AddBtn;
         private DataGridView FeesDGV;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton8;
     }
 }

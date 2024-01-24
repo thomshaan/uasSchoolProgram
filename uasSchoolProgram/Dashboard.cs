@@ -138,5 +138,27 @@ namespace uasSchoolProgram
         {
 
         }
+
+        private void panel11_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void foreverButton8_Click(object sender, EventArgs e)
+        {
+            Class Obj = new Class();
+            Obj.Show();
+            this.Hide();
+        }
+
+        private void label9_Click(object sender, EventArgs e)
+        {
+            Con.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from ClassTbl", Con);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            ClassNum.Text = dt.Rows[0][0].ToString();
+            Con.Close();
+        }
     }
 }

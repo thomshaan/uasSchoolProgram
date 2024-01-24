@@ -58,8 +58,13 @@
             panel8 = new Panel();
             label5 = new Label();
             panel9 = new Panel();
-            FinanceSum = new Label();
             label7 = new Label();
+            FinanceSum = new Label();
+            panel11 = new Panel();
+            label6 = new Label();
+            panel10 = new Panel();
+            ClassNum = new Label();
+            foreverButton8 = new ReaLTaiizor.Controls.ForeverButton();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -72,6 +77,8 @@
             panel7.SuspendLayout();
             panel8.SuspendLayout();
             panel9.SuspendLayout();
+            panel11.SuspendLayout();
+            panel10.SuspendLayout();
             SuspendLayout();
             // 
             // panel1
@@ -242,7 +249,7 @@
             // 
             panel2.BackColor = Color.FromArgb(148, 115, 96);
             panel2.Controls.Add(label8);
-            panel2.Location = new Point(240, 260);
+            panel2.Location = new Point(220, 250);
             panel2.Name = "panel2";
             panel2.Size = new Size(150, 45);
             panel2.TabIndex = 57;
@@ -266,7 +273,7 @@
             panel3.BackColor = Color.FromArgb(161, 175, 160);
             panel3.Controls.Add(StNum);
             panel3.Controls.Add(StLbl);
-            panel3.Location = new Point(240, 140);
+            panel3.Location = new Point(220, 130);
             panel3.Name = "panel3";
             panel3.Size = new Size(150, 124);
             panel3.TabIndex = 58;
@@ -301,7 +308,7 @@
             // 
             panel4.BackColor = Color.FromArgb(161, 175, 160);
             panel4.Controls.Add(TeacherNum);
-            panel4.Location = new Point(407, 140);
+            panel4.Location = new Point(387, 130);
             panel4.Name = "panel4";
             panel4.Size = new Size(150, 124);
             panel4.TabIndex = 60;
@@ -323,7 +330,7 @@
             // 
             panel5.BackColor = Color.FromArgb(148, 115, 96);
             panel5.Controls.Add(label3);
-            panel5.Location = new Point(407, 260);
+            panel5.Location = new Point(387, 250);
             panel5.Name = "panel5";
             panel5.Size = new Size(150, 45);
             panel5.TabIndex = 59;
@@ -345,7 +352,7 @@
             // 
             panel6.BackColor = Color.FromArgb(161, 175, 160);
             panel6.Controls.Add(EventsNum);
-            panel6.Location = new Point(573, 140);
+            panel6.Location = new Point(553, 130);
             panel6.Name = "panel6";
             panel6.Size = new Size(150, 124);
             panel6.TabIndex = 60;
@@ -367,7 +374,7 @@
             // 
             panel7.BackColor = Color.FromArgb(148, 115, 96);
             panel7.Controls.Add(label4);
-            panel7.Location = new Point(573, 260);
+            panel7.Location = new Point(553, 250);
             panel7.Name = "panel7";
             panel7.Size = new Size(150, 45);
             panel7.TabIndex = 59;
@@ -391,7 +398,7 @@
             foreverButton7.BackgroundImageLayout = ImageLayout.None;
             foreverButton7.BaseColor = Color.FromArgb(247, 236, 208);
             foreverButton7.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton7.Location = new Point(0, 413);
+            foreverButton7.Location = new Point(0, 464);
             foreverButton7.Name = "foreverButton7";
             foreverButton7.Rounded = false;
             foreverButton7.Size = new Size(185, 45);
@@ -432,19 +439,6 @@
             panel9.Size = new Size(612, 186);
             panel9.TabIndex = 59;
             // 
-            // FinanceSum
-            // 
-            FinanceSum.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
-            FinanceSum.Font = new Font("Plus Jakarta Sans", 48F, FontStyle.Bold, GraphicsUnit.Point);
-            FinanceSum.ForeColor = SystemColors.ButtonHighlight;
-            FinanceSum.Location = new Point(200, 42);
-            FinanceSum.Name = "FinanceSum";
-            FinanceSum.Size = new Size(229, 97);
-            FinanceSum.TabIndex = 72;
-            FinanceSum.Text = "Num";
-            FinanceSum.TextAlign = ContentAlignment.MiddleCenter;
-            FinanceSum.UseMnemonic = false;
-            // 
             // label7
             // 
             label7.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
@@ -459,12 +453,89 @@
             label7.TextAlign = ContentAlignment.MiddleRight;
             label7.UseMnemonic = false;
             // 
+            // FinanceSum
+            // 
+            FinanceSum.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            FinanceSum.Font = new Font("Plus Jakarta Sans", 48F, FontStyle.Bold, GraphicsUnit.Point);
+            FinanceSum.ForeColor = SystemColors.ButtonHighlight;
+            FinanceSum.Location = new Point(0, 42);
+            FinanceSum.Name = "FinanceSum";
+            FinanceSum.Size = new Size(612, 97);
+            FinanceSum.TabIndex = 72;
+            FinanceSum.Text = "Num";
+            FinanceSum.TextAlign = ContentAlignment.MiddleCenter;
+            FinanceSum.UseMnemonic = false;
+            // 
+            // panel11
+            // 
+            panel11.BackColor = Color.FromArgb(148, 115, 96);
+            panel11.Controls.Add(label6);
+            panel11.Location = new Point(723, 250);
+            panel11.Name = "panel11";
+            panel11.Size = new Size(150, 45);
+            panel11.TabIndex = 73;
+            panel11.Paint += panel11_Paint;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Plus Jakarta Sans Medium", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = SystemColors.ButtonHighlight;
+            label6.Location = new Point(45, 10);
+            label6.Name = "label6";
+            label6.Size = new Size(58, 25);
+            label6.TabIndex = 72;
+            label6.Text = "Class";
+            label6.TextAlign = ContentAlignment.MiddleCenter;
+            label6.UseMnemonic = false;
+            // 
+            // panel10
+            // 
+            panel10.BackColor = Color.FromArgb(161, 175, 160);
+            panel10.Controls.Add(ClassNum);
+            panel10.Location = new Point(723, 130);
+            panel10.Name = "panel10";
+            panel10.Size = new Size(150, 124);
+            panel10.TabIndex = 73;
+            // 
+            // ClassNum
+            // 
+            ClassNum.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
+            ClassNum.Font = new Font("Plus Jakarta Sans", 26.25F, FontStyle.Bold, GraphicsUnit.Point);
+            ClassNum.ForeColor = SystemColors.ButtonHighlight;
+            ClassNum.Location = new Point(0, 39);
+            ClassNum.Name = "ClassNum";
+            ClassNum.Size = new Size(150, 56);
+            ClassNum.TabIndex = 74;
+            ClassNum.Text = "Num";
+            ClassNum.TextAlign = ContentAlignment.MiddleCenter;
+            ClassNum.UseMnemonic = false;
+            ClassNum.Click += label9_Click;
+            // 
+            // foreverButton8
+            // 
+            foreverButton8.BackColor = Color.Transparent;
+            foreverButton8.BackgroundImageLayout = ImageLayout.None;
+            foreverButton8.BaseColor = Color.FromArgb(247, 236, 208);
+            foreverButton8.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            foreverButton8.Location = new Point(0, 413);
+            foreverButton8.Name = "foreverButton8";
+            foreverButton8.Rounded = false;
+            foreverButton8.Size = new Size(185, 45);
+            foreverButton8.TabIndex = 74;
+            foreverButton8.Text = "Class";
+            foreverButton8.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton8.Click += foreverButton8_Click;
+            // 
             // Dashboard
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(905, 617);
+            Controls.Add(foreverButton8);
+            Controls.Add(panel10);
+            Controls.Add(panel11);
             Controls.Add(panel9);
             Controls.Add(panel8);
             Controls.Add(foreverButton7);
@@ -503,6 +574,9 @@
             panel8.ResumeLayout(false);
             panel8.PerformLayout();
             panel9.ResumeLayout(false);
+            panel11.ResumeLayout(false);
+            panel11.PerformLayout();
+            panel10.ResumeLayout(false);
             ResumeLayout(false);
         }
 
@@ -539,5 +613,10 @@
         private Label EventsNum;
         private Label label7;
         private Label FinanceSum;
+        private Panel panel11;
+        private Label label6;
+        private Panel panel10;
+        private Label ClassNum;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton8;
     }
 }

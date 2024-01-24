@@ -56,6 +56,7 @@
             label5 = new Label();
             label6 = new Label();
             label9 = new Label();
+            foreverButton8 = new ReaLTaiizor.Controls.ForeverButton();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -190,6 +191,7 @@
             // 
             label4.AutoSize = true;
             label4.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.ForeColor = Color.FromArgb(148, 115, 96);
             label4.Location = new Point(274, 268);
             label4.Name = "label4";
             label4.Size = new Size(115, 33);
@@ -303,7 +305,7 @@
             foreverButton7.BackgroundImageLayout = ImageLayout.None;
             foreverButton7.BaseColor = Color.FromArgb(247, 236, 208);
             foreverButton7.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            foreverButton7.Location = new Point(0, 420);
+            foreverButton7.Location = new Point(0, 471);
             foreverButton7.Name = "foreverButton7";
             foreverButton7.Rounded = false;
             foreverButton7.Size = new Size(185, 45);
@@ -327,9 +329,9 @@
             // 
             pictureBox10.BackColor = Color.FromArgb(148, 115, 96);
             pictureBox10.Image = (Image)resources.GetObject("pictureBox10.Image");
-            pictureBox10.Location = new Point(46, 484);
+            pictureBox10.Location = new Point(12, 542);
             pictureBox10.Name = "pictureBox10";
-            pictureBox10.Size = new Size(97, 79);
+            pictureBox10.Size = new Size(51, 56);
             pictureBox10.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox10.TabIndex = 55;
             pictureBox10.TabStop = false;
@@ -341,7 +343,7 @@
             label7.BackColor = Color.FromArgb(148, 115, 96);
             label7.Font = new Font("Plus Jakarta Sans Medium", 9.749999F, FontStyle.Bold, GraphicsUnit.Point);
             label7.ForeColor = Color.Transparent;
-            label7.Location = new Point(62, 566);
+            label7.Location = new Point(69, 551);
             label7.Name = "label7";
             label7.Size = new Size(68, 21);
             label7.TabIndex = 56;
@@ -351,6 +353,7 @@
             // 
             label3.AutoSize = true;
             label3.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.ForeColor = Color.FromArgb(148, 115, 96);
             label3.Location = new Point(288, 447);
             label3.Name = "label3";
             label3.Size = new Size(89, 33);
@@ -361,6 +364,7 @@
             // 
             label8.AutoSize = true;
             label8.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label8.ForeColor = Color.FromArgb(148, 115, 96);
             label8.Location = new Point(489, 447);
             label8.Name = "label8";
             label8.Size = new Size(136, 33);
@@ -371,6 +375,7 @@
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label5.ForeColor = Color.FromArgb(148, 115, 96);
             label5.Location = new Point(500, 268);
             label5.Name = "label5";
             label5.Size = new Size(114, 33);
@@ -381,6 +386,7 @@
             // 
             label6.AutoSize = true;
             label6.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label6.ForeColor = Color.FromArgb(148, 115, 96);
             label6.Location = new Point(708, 268);
             label6.Name = "label6";
             label6.Size = new Size(143, 33);
@@ -391,11 +397,27 @@
             // 
             label9.AutoSize = true;
             label9.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label9.ForeColor = Color.FromArgb(148, 115, 96);
             label9.Location = new Point(747, 447);
             label9.Name = "label9";
             label9.Size = new Size(68, 33);
             label9.TabIndex = 61;
             label9.Text = "Fees";
+            // 
+            // foreverButton8
+            // 
+            foreverButton8.BackColor = Color.Transparent;
+            foreverButton8.BackgroundImageLayout = ImageLayout.None;
+            foreverButton8.BaseColor = Color.FromArgb(247, 236, 208);
+            foreverButton8.Font = new Font("Plus Jakarta Sans SemiBold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            foreverButton8.Location = new Point(0, 420);
+            foreverButton8.Name = "foreverButton8";
+            foreverButton8.Rounded = false;
+            foreverButton8.Size = new Size(185, 45);
+            foreverButton8.TabIndex = 71;
+            foreverButton8.Text = "Class";
+            foreverButton8.TextColor = Color.FromArgb(148, 115, 96);
+            foreverButton8.Click += foreverButton8_Click;
             // 
             // MainMenu
             // 
@@ -403,6 +425,7 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(892, 607);
+            Controls.Add(foreverButton8);
             Controls.Add(label9);
             Controls.Add(label6);
             Controls.Add(label5);
@@ -474,5 +497,6 @@
         private Label label5;
         private Label label6;
         private Label label9;
+        private ReaLTaiizor.Controls.ForeverButton foreverButton8;
     }
 }
