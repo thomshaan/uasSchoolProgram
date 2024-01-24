@@ -33,6 +33,7 @@
             pictureBox2 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
+            pictureBox1 = new PictureBox();
             pictureBox9 = new PictureBox();
             foreverButton6 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton5 = new ReaLTaiizor.Controls.ForeverButton();
@@ -54,12 +55,13 @@
             AddBtn = new ReaLTaiizor.Controls.HopeButton();
             FeesDGV = new DataGridView();
             foreverButton8 = new ReaLTaiizor.Controls.ForeverButton();
-            pictureBox1 = new PictureBox();
+            label12 = new Label();
+            label11 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)FeesDGV).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -114,6 +116,17 @@
             label2.TextAlign = ContentAlignment.MiddleCenter;
             label2.UseMnemonic = false;
             label2.Click += label2_Click;
+            // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = Properties.Resources.school_icon_png_14043;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(22, 14);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(67, 62);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
             // 
             // pictureBox9
             // 
@@ -410,16 +423,29 @@
             foreverButton8.TextColor = Color.FromArgb(148, 115, 96);
             foreverButton8.Click += foreverButton8_Click;
             // 
-            // pictureBox1
+            // label12
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.school_icon_png_14043;
-            pictureBox1.Image = Properties.Resources.school_icon_png_14043;
-            pictureBox1.Location = new Point(22, 14);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(67, 62);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
+            label12.AutoSize = true;
+            label12.BackColor = Color.FromArgb(148, 115, 96);
+            label12.Font = new Font("Plus Jakarta Sans Light", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.ForeColor = Color.Transparent;
+            label12.Location = new Point(12, 571);
+            label12.Name = "label12";
+            label12.Size = new Size(105, 21);
+            label12.TabIndex = 107;
+            label12.Text = "Made with Love";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.FromArgb(148, 115, 96);
+            label11.Font = new Font("Plus Jakarta Sans Medium", 9.749999F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.Transparent;
+            label11.Location = new Point(12, 592);
+            label11.Name = "label11";
+            label11.Size = new Size(139, 21);
+            label11.TabIndex = 106;
+            label11.Text = "Schonize 0.5 Beta";
             // 
             // Fees
             // 
@@ -427,6 +453,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(881, 622);
+            Controls.Add(label12);
+            Controls.Add(label11);
             Controls.Add(foreverButton8);
             Controls.Add(FeesDGV);
             Controls.Add(AddBtn);
@@ -455,9 +483,9 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)FeesDGV).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -490,5 +518,7 @@
         private DataGridView FeesDGV;
         private ReaLTaiizor.Controls.ForeverButton foreverButton8;
         private PictureBox pictureBox1;
+        private Label label12;
+        private Label label11;
     }
 }

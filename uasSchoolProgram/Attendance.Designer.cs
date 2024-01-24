@@ -56,6 +56,8 @@
             foreverButton7 = new ReaLTaiizor.Controls.ForeverButton();
             AttendanceDGV = new DataGridView();
             foreverButton8 = new ReaLTaiizor.Controls.ForeverButton();
+            label12 = new Label();
+            label11 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -118,7 +120,7 @@
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = Properties.Resources.school_icon_png_14043;
-            pictureBox1.Image = Properties.Resources.school_icon_png_14043;
+            pictureBox1.Image = Properties.Resources.Black_and_Grey_Minimalist_Simple_Modern_Square_Hipster_Stone_Logo_4_;
             pictureBox1.Location = new Point(22, 14);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(67, 62);
@@ -441,12 +443,38 @@
             foreverButton8.TextColor = Color.FromArgb(148, 115, 96);
             foreverButton8.Click += foreverButton8_Click;
             // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.FromArgb(148, 115, 96);
+            label12.Font = new Font("Plus Jakarta Sans Light", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.ForeColor = Color.Transparent;
+            label12.Location = new Point(12, 578);
+            label12.Name = "label12";
+            label12.Size = new Size(105, 21);
+            label12.TabIndex = 102;
+            label12.Text = "Made with Love";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.FromArgb(148, 115, 96);
+            label11.Font = new Font("Plus Jakarta Sans Medium", 9.749999F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.Transparent;
+            label11.Location = new Point(12, 599);
+            label11.Name = "label11";
+            label11.Size = new Size(139, 21);
+            label11.TabIndex = 101;
+            label11.Text = "Schonize 0.5 Beta";
+            // 
             // Attendance
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(877, 629);
+            Controls.Add(label12);
+            Controls.Add(label11);
             Controls.Add(foreverButton8);
             Controls.Add(AttendanceDGV);
             Controls.Add(foreverButton7);
@@ -512,5 +540,7 @@
         private ReaLTaiizor.Controls.ForeverButton foreverButton7;
         private DataGridView AttendanceDGV;
         private ReaLTaiizor.Controls.ForeverButton foreverButton8;
+        private Label label12;
+        private Label label11;
     }
 }

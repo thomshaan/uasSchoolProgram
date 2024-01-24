@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Teachers));
             panel1 = new Panel();
+            pictureBox3 = new PictureBox();
             pictureBox2 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
@@ -59,12 +60,13 @@
             TPhoneTb = new TextBox();
             TeachersDGV = new DataGridView();
             foreverButton8 = new ReaLTaiizor.Controls.ForeverButton();
-            pictureBox3 = new PictureBox();
+            label12 = new Label();
+            label11 = new Label();
             panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)TeachersDGV).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -79,6 +81,17 @@
             panel1.Name = "panel1";
             panel1.Size = new Size(844, 94);
             panel1.TabIndex = 23;
+            // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImage = Properties.Resources.school_icon_png_14043;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(22, 14);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(67, 62);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 22;
+            pictureBox3.TabStop = false;
             // 
             // pictureBox2
             // 
@@ -473,16 +486,29 @@
             foreverButton8.TextColor = Color.FromArgb(148, 115, 96);
             foreverButton8.Click += foreverButton8_Click;
             // 
-            // pictureBox3
+            // label12
             // 
-            pictureBox3.BackgroundImage = Properties.Resources.school_icon_png_14043;
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(22, 14);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(67, 62);
-            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox3.TabIndex = 22;
-            pictureBox3.TabStop = false;
+            label12.AutoSize = true;
+            label12.BackColor = Color.FromArgb(148, 115, 96);
+            label12.Font = new Font("Plus Jakarta Sans Light", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.ForeColor = Color.Transparent;
+            label12.Location = new Point(12, 588);
+            label12.Name = "label12";
+            label12.Size = new Size(105, 21);
+            label12.TabIndex = 102;
+            label12.Text = "Made with Love";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.FromArgb(148, 115, 96);
+            label11.Font = new Font("Plus Jakarta Sans Medium", 9.749999F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.Transparent;
+            label11.Location = new Point(12, 609);
+            label11.Name = "label11";
+            label11.Size = new Size(139, 21);
+            label11.TabIndex = 101;
+            label11.Text = "Schonize 0.5 Beta";
             // 
             // Teachers
             // 
@@ -490,6 +516,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(844, 639);
+            Controls.Add(label12);
+            Controls.Add(label11);
             Controls.Add(foreverButton8);
             Controls.Add(TeachersDGV);
             Controls.Add(TPhoneTb);
@@ -522,10 +550,10 @@
             Text = "Form1";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)TeachersDGV).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -563,5 +591,7 @@
         private DataGridView TeachersDGV;
         private ReaLTaiizor.Controls.ForeverButton foreverButton8;
         private PictureBox pictureBox3;
+        private Label label12;
+        private Label label11;
     }
 }

@@ -57,6 +57,10 @@
             label6 = new Label();
             label9 = new Label();
             foreverButton8 = new ReaLTaiizor.Controls.ForeverButton();
+            label10 = new Label();
+            pictureBox11 = new PictureBox();
+            label11 = new Label();
+            label12 = new Label();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
@@ -68,6 +72,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -124,7 +129,7 @@
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = Properties.Resources.school_icon_png_14043;
-            pictureBox1.Image = Properties.Resources.school_icon_png_14043;
+            pictureBox1.Image = Properties.Resources.Black_and_Grey_Minimalist_Simple_Modern_Square_Hipster_Stone_Logo_4_;
             pictureBox1.Location = new Point(22, 14);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(67, 62);
@@ -135,7 +140,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = Properties.Resources.icons8_student_100;
-            pictureBox2.Location = new Point(264, 139);
+            pictureBox2.Location = new Point(311, 114);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(138, 126);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -146,7 +151,7 @@
             // pictureBox3
             // 
             pictureBox3.Image = Properties.Resources.icons8_students_100;
-            pictureBox3.Location = new Point(487, 139);
+            pictureBox3.Location = new Point(481, 114);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(138, 126);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -157,7 +162,7 @@
             // pictureBox5
             // 
             pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(708, 318);
+            pictureBox5.Location = new Point(650, 293);
             pictureBox5.Name = "pictureBox5";
             pictureBox5.Size = new Size(138, 126);
             pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
@@ -168,7 +173,7 @@
             // pictureBox6
             // 
             pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(487, 318);
+            pictureBox6.Location = new Point(481, 293);
             pictureBox6.Name = "pictureBox6";
             pictureBox6.Size = new Size(138, 126);
             pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
@@ -179,7 +184,7 @@
             // pictureBox7
             // 
             pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(264, 318);
+            pictureBox7.Location = new Point(311, 293);
             pictureBox7.Name = "pictureBox7";
             pictureBox7.Size = new Size(138, 126);
             pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
@@ -192,7 +197,7 @@
             label4.AutoSize = true;
             label4.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label4.ForeColor = Color.FromArgb(148, 115, 96);
-            label4.Location = new Point(274, 268);
+            label4.Location = new Point(321, 243);
             label4.Name = "label4";
             label4.Size = new Size(115, 33);
             label4.TabIndex = 15;
@@ -205,7 +210,7 @@
             pictureBox9.Dock = DockStyle.Left;
             pictureBox9.Location = new Point(0, 94);
             pictureBox9.Name = "pictureBox9";
-            pictureBox9.Size = new Size(185, 513);
+            pictureBox9.Size = new Size(185, 558);
             pictureBox9.TabIndex = 20;
             pictureBox9.TabStop = false;
             // 
@@ -317,7 +322,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(708, 139);
+            pictureBox4.Location = new Point(650, 114);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(138, 126);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -354,7 +359,7 @@
             label3.AutoSize = true;
             label3.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label3.ForeColor = Color.FromArgb(148, 115, 96);
-            label3.Location = new Point(288, 447);
+            label3.Location = new Point(335, 422);
             label3.Name = "label3";
             label3.Size = new Size(89, 33);
             label3.TabIndex = 57;
@@ -365,7 +370,7 @@
             label8.AutoSize = true;
             label8.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label8.ForeColor = Color.FromArgb(148, 115, 96);
-            label8.Location = new Point(489, 447);
+            label8.Location = new Point(483, 422);
             label8.Name = "label8";
             label8.Size = new Size(136, 33);
             label8.TabIndex = 58;
@@ -376,7 +381,7 @@
             label5.AutoSize = true;
             label5.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(148, 115, 96);
-            label5.Location = new Point(500, 268);
+            label5.Location = new Point(494, 243);
             label5.Name = "label5";
             label5.Size = new Size(114, 33);
             label5.TabIndex = 59;
@@ -387,7 +392,7 @@
             label6.AutoSize = true;
             label6.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label6.ForeColor = Color.FromArgb(148, 115, 96);
-            label6.Location = new Point(708, 268);
+            label6.Location = new Point(650, 243);
             label6.Name = "label6";
             label6.Size = new Size(143, 33);
             label6.TabIndex = 60;
@@ -398,7 +403,7 @@
             label9.AutoSize = true;
             label9.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
             label9.ForeColor = Color.FromArgb(148, 115, 96);
-            label9.Location = new Point(747, 447);
+            label9.Location = new Point(689, 422);
             label9.Name = "label9";
             label9.Size = new Size(68, 33);
             label9.TabIndex = 61;
@@ -419,12 +424,62 @@
             foreverButton8.TextColor = Color.FromArgb(148, 115, 96);
             foreverButton8.Click += foreverButton8_Click;
             // 
+            // label10
+            // 
+            label10.AutoSize = true;
+            label10.Font = new Font("Plus Jakarta Sans Medium", 15.75F, FontStyle.Bold, GraphicsUnit.Point);
+            label10.ForeColor = Color.FromArgb(148, 115, 96);
+            label10.Location = new Point(516, 610);
+            label10.Name = "label10";
+            label10.Size = new Size(75, 33);
+            label10.TabIndex = 73;
+            label10.Text = "Class";
+            // 
+            // pictureBox11
+            // 
+            pictureBox11.Image = (Image)resources.GetObject("pictureBox11.Image");
+            pictureBox11.Location = new Point(483, 471);
+            pictureBox11.Name = "pictureBox11";
+            pictureBox11.Size = new Size(138, 126);
+            pictureBox11.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox11.TabIndex = 72;
+            pictureBox11.TabStop = false;
+            pictureBox11.Click += pictureBox11_Click;
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.FromArgb(148, 115, 96);
+            label11.Font = new Font("Plus Jakarta Sans Medium", 9.749999F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.Transparent;
+            label11.Location = new Point(12, 622);
+            label11.Name = "label11";
+            label11.Size = new Size(139, 21);
+            label11.TabIndex = 74;
+            label11.Text = "Schonize 0.5 Beta";
+            // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.FromArgb(148, 115, 96);
+            label12.Font = new Font("Plus Jakarta Sans Light", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.ForeColor = Color.Transparent;
+            label12.Location = new Point(12, 601);
+            label12.Name = "label12";
+            label12.Size = new Size(105, 21);
+            label12.TabIndex = 75;
+            label12.Text = "Made with Love";
+            // 
             // MainMenu
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
-            ClientSize = new Size(892, 607);
+            ClientSize = new Size(892, 652);
+            Controls.Add(label12);
+            Controls.Add(label11);
+            Controls.Add(label10);
+            Controls.Add(pictureBox11);
             Controls.Add(foreverButton8);
             Controls.Add(label9);
             Controls.Add(label6);
@@ -464,6 +519,7 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox10).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox11).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -498,5 +554,9 @@
         private Label label6;
         private Label label9;
         private ReaLTaiizor.Controls.ForeverButton foreverButton8;
+        private Label label10;
+        private PictureBox pictureBox11;
+        private Label label11;
+        private Label label12;
     }
 }

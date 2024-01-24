@@ -73,6 +73,16 @@ namespace uasSchoolProgram.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Black_and_Grey_Minimalist_Simple_Modern_Square_Hipster_Stone_Logo_4_ {
+            get {
+                object obj = ResourceManager.GetObject("Black and Grey Minimalist Simple Modern Square Hipster Stone Logo(4)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dashboard_alt_3_svgrepo_com {
             get {
                 object obj = ResourceManager.GetObject("dashboard-alt-3-svgrepo-com", resourceCulture);

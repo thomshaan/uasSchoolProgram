@@ -131,9 +131,39 @@ namespace uasSchoolProgram
             Obj.Show();
             this.Hide();
         }
+
+        int Key = 0;
         private void hopeButton3_Click(object sender, EventArgs e)
         {
+            if (Key == 0)
+            {
+                MessageBox.Show("Select Student");
+            }
 
+            else
+            {
+                try
+                {
+                    Con.Open();
+
+                    SqlCommand cmd = new SqlCommand("delete from FeesTbl where PayId= @Payid", Con);
+                    cmd.Parameters.AddWithValue("@Payid", Key);
+                    cmd.ExecuteNonQuery();
+                    MessageBox.Show("Payment Deleted");
+                    Con.Close();
+                    DisplayFees();
+                    Reset();
+
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+
+
+
+
+            }
         }
 
         private void Reset()
@@ -232,7 +262,27 @@ namespace uasSchoolProgram
 
         private void FeesDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex >= 0 && e.RowIndex < FeesDGV.Rows.Count)
+            {
+                DataGridViewRow row = FeesDGV.Rows[e.RowIndex];
 
+                StdIdCb.Text = row.Cells[1].Value.ToString();
+                StNameTb.Text = row.Cells[2].Value.ToString();
+                AmountTb.Text = row.Cells[3].Value.ToString();
+
+
+                Key = Convert.ToInt32(row.Cells[0].Value);
+            }
+
+            if (StdIdCb.Text == "")
+            {
+                Key = 0;
+            }
+
+            else
+            {
+
+            }
         }
 
         private void DeleteBtn_Click(object sender, EventArgs e)

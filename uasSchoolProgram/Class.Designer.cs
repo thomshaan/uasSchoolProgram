@@ -56,6 +56,8 @@
             label4 = new Label();
             ClassDate = new DateTimePicker();
             ClassDGV = new DataGridView();
+            label12 = new Label();
+            label11 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
@@ -438,12 +440,38 @@
             ClassDGV.TabIndex = 119;
             ClassDGV.CellContentClick += ClassDGV_CellContentClick;
             // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.FromArgb(148, 115, 96);
+            label12.Font = new Font("Plus Jakarta Sans Light", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.ForeColor = Color.Transparent;
+            label12.Location = new Point(12, 580);
+            label12.Name = "label12";
+            label12.Size = new Size(105, 21);
+            label12.TabIndex = 121;
+            label12.Text = "Made with Love";
+            // 
+            // label11
+            // 
+            label11.AutoSize = true;
+            label11.BackColor = Color.FromArgb(148, 115, 96);
+            label11.Font = new Font("Plus Jakarta Sans Medium", 9.749999F, FontStyle.Bold, GraphicsUnit.Point);
+            label11.ForeColor = Color.Transparent;
+            label11.Location = new Point(12, 601);
+            label11.Name = "label11";
+            label11.Size = new Size(139, 21);
+            label11.TabIndex = 120;
+            label11.Text = "Schonize 0.5 Beta";
+            // 
             // Class
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(900, 631);
+            Controls.Add(label12);
+            Controls.Add(label11);
             Controls.Add(ClassDGV);
             Controls.Add(ClassDate);
             Controls.Add(label4);
@@ -509,5 +537,7 @@
         private Label label4;
         private DateTimePicker ClassDate;
         private DataGridView ClassDGV;
+        private Label label12;
+        private Label label11;
     }
 }

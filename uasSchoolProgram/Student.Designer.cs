@@ -65,6 +65,8 @@
             StudentDGV = new DataGridView();
             foreverButton7 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton8 = new ReaLTaiizor.Controls.ForeverButton();
+            label12 = new Label();
+            label13 = new Label();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -545,12 +547,38 @@
             foreverButton8.TextColor = Color.FromArgb(148, 115, 96);
             foreverButton8.Click += foreverButton8_Click;
             // 
+            // label12
+            // 
+            label12.AutoSize = true;
+            label12.BackColor = Color.FromArgb(148, 115, 96);
+            label12.Font = new Font("Plus Jakarta Sans Light", 9.749999F, FontStyle.Regular, GraphicsUnit.Point);
+            label12.ForeColor = Color.Transparent;
+            label12.Location = new Point(12, 561);
+            label12.Name = "label12";
+            label12.Size = new Size(105, 21);
+            label12.TabIndex = 101;
+            label12.Text = "Made with Love";
+            // 
+            // label13
+            // 
+            label13.AutoSize = true;
+            label13.BackColor = Color.FromArgb(148, 115, 96);
+            label13.Font = new Font("Plus Jakarta Sans Medium", 9.749999F, FontStyle.Bold, GraphicsUnit.Point);
+            label13.ForeColor = Color.Transparent;
+            label13.Location = new Point(12, 582);
+            label13.Name = "label13";
+            label13.Size = new Size(139, 21);
+            label13.TabIndex = 100;
+            label13.Text = "Schonize 0.5 Beta";
+            // 
             // Student
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(247, 236, 208);
             ClientSize = new Size(895, 612);
+            Controls.Add(label12);
+            Controls.Add(label13);
             Controls.Add(foreverButton8);
             Controls.Add(foreverButton7);
             Controls.Add(StudentDGV);
@@ -631,5 +659,7 @@
         private DataGridView StudentDGV;
         private ReaLTaiizor.Controls.ForeverButton foreverButton7;
         private ReaLTaiizor.Controls.ForeverButton foreverButton8;
+        private Label label12;
+        private Label label13;
     }
 }

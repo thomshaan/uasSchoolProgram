@@ -20,6 +20,7 @@ namespace uasSchoolProgram
             countTeacher();
             countEvent();
             sumFees();
+            countClass();
         }
 
         SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\THOMAS\Documents\school.mdf;Integrated Security=True;Connect Timeout=30");
@@ -151,7 +152,12 @@ namespace uasSchoolProgram
             this.Hide();
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void label9(object sender, EventArgs e)
+        {
+
+        }
+
+        private void countClass()
         {
             Con.Open();
             SqlDataAdapter sda = new SqlDataAdapter("select Count(*) from ClassTbl", Con);
