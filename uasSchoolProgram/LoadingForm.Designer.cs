@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoadingForm));
             myProgressBar = new ProgressBar();
             label1 = new Label();
             label2 = new Label();
@@ -73,7 +74,7 @@
             // pictureBox1
             // 
             pictureBox1.BackgroundImage = Properties.Resources.school_icon_png_14043;
-            pictureBox1.Image = Properties.Resources.school_icon_png_14043;
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
             pictureBox1.Location = new Point(323, 79);
             pictureBox1.Name = "pictureBox1";
             pictureBox1.Size = new Size(189, 185);

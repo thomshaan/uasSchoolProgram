@@ -361,7 +361,7 @@
             // pictureBox3
             // 
             pictureBox3.BackgroundImage = Properties.Resources.school_icon_png_14043;
-            pictureBox3.Image = Properties.Resources.school_icon_png_14043;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
             pictureBox3.Location = new Point(22, 14);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(67, 62);

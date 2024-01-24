@@ -33,7 +33,6 @@
             pictureBox2 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
-            pictureBox1 = new PictureBox();
             pictureBox9 = new PictureBox();
             foreverButton6 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton5 = new ReaLTaiizor.Controls.ForeverButton();
@@ -55,11 +54,12 @@
             AddBtn = new ReaLTaiizor.Controls.HopeButton();
             FeesDGV = new DataGridView();
             foreverButton8 = new ReaLTaiizor.Controls.ForeverButton();
+            pictureBox1 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)FeesDGV).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // panel1
@@ -114,17 +114,6 @@
             label2.TextAlign = ContentAlignment.MiddleCenter;
             label2.UseMnemonic = false;
             label2.Click += label2_Click;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = Properties.Resources.school_icon_png_14043;
-            pictureBox1.Image = Properties.Resources.school_icon_png_14043;
-            pictureBox1.Location = new Point(22, 14);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(67, 62);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
             // 
             // pictureBox9
             // 
@@ -421,6 +410,17 @@
             foreverButton8.TextColor = Color.FromArgb(148, 115, 96);
             foreverButton8.Click += foreverButton8_Click;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.BackgroundImage = Properties.Resources.school_icon_png_14043;
+            pictureBox1.Image = Properties.Resources.school_icon_png_14043;
+            pictureBox1.Location = new Point(22, 14);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(67, 62);
+            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox1.TabIndex = 5;
+            pictureBox1.TabStop = false;
+            // 
             // Fees
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -455,9 +455,9 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)FeesDGV).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -467,7 +467,6 @@
         private Panel panel1;
         private Label label1;
         private Label label2;
-        private PictureBox pictureBox1;
         private PictureBox pictureBox9;
         private ReaLTaiizor.Controls.ForeverButton foreverButton6;
         private ReaLTaiizor.Controls.ForeverButton foreverButton5;
@@ -490,5 +489,6 @@
         private ReaLTaiizor.Controls.HopeButton AddBtn;
         private DataGridView FeesDGV;
         private ReaLTaiizor.Controls.ForeverButton foreverButton8;
+        private PictureBox pictureBox1;
     }
 }

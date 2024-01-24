@@ -33,7 +33,6 @@
             pictureBox2 = new PictureBox();
             label1 = new Label();
             label2 = new Label();
-            pictureBox1 = new PictureBox();
             pictureBox9 = new PictureBox();
             foreverButton6 = new ReaLTaiizor.Controls.ForeverButton();
             foreverButton5 = new ReaLTaiizor.Controls.ForeverButton();
@@ -60,20 +59,21 @@
             TPhoneTb = new TextBox();
             TeachersDGV = new DataGridView();
             foreverButton8 = new ReaLTaiizor.Controls.ForeverButton();
+            pictureBox3 = new PictureBox();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).BeginInit();
             ((System.ComponentModel.ISupportInitialize)TeachersDGV).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             SuspendLayout();
             // 
             // panel1
             // 
             panel1.BackColor = Color.FromArgb(161, 175, 160);
+            panel1.Controls.Add(pictureBox3);
             panel1.Controls.Add(pictureBox2);
             panel1.Controls.Add(label1);
             panel1.Controls.Add(label2);
-            panel1.Controls.Add(pictureBox1);
             panel1.Dock = DockStyle.Top;
             panel1.Location = new Point(0, 0);
             panel1.Name = "panel1";
@@ -117,17 +117,6 @@
             label2.Text = "Teachers";
             label2.TextAlign = ContentAlignment.MiddleCenter;
             label2.UseMnemonic = false;
-            // 
-            // pictureBox1
-            // 
-            pictureBox1.BackgroundImage = Properties.Resources.school_icon_png_14043;
-            pictureBox1.Image = Properties.Resources.school_icon_png_14043;
-            pictureBox1.Location = new Point(22, 14);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(67, 62);
-            pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox1.TabIndex = 5;
-            pictureBox1.TabStop = false;
             // 
             // pictureBox9
             // 
@@ -484,6 +473,17 @@
             foreverButton8.TextColor = Color.FromArgb(148, 115, 96);
             foreverButton8.Click += foreverButton8_Click;
             // 
+            // pictureBox3
+            // 
+            pictureBox3.BackgroundImage = Properties.Resources.school_icon_png_14043;
+            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
+            pictureBox3.Location = new Point(22, 14);
+            pictureBox3.Name = "pictureBox3";
+            pictureBox3.Size = new Size(67, 62);
+            pictureBox3.SizeMode = PictureBoxSizeMode.StretchImage;
+            pictureBox3.TabIndex = 22;
+            pictureBox3.TabStop = false;
+            // 
             // Teachers
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
@@ -523,9 +523,9 @@
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox9).EndInit();
             ((System.ComponentModel.ISupportInitialize)TeachersDGV).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -535,7 +535,6 @@
         private Panel panel1;
         private Label label1;
         private Label label2;
-        private PictureBox pictureBox1;
         private PictureBox pictureBox9;
         private ReaLTaiizor.Controls.ForeverButton foreverButton6;
         private ReaLTaiizor.Controls.ForeverButton foreverButton5;
@@ -563,5 +562,6 @@
         private TextBox TPhoneTb;
         private DataGridView TeachersDGV;
         private ReaLTaiizor.Controls.ForeverButton foreverButton8;
+        private PictureBox pictureBox3;
     }
 }

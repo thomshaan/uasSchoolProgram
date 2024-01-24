@@ -29,11 +29,11 @@ namespace uasSchoolProgram
 
         private void foreverButton1_Click(object sender, EventArgs e)
         {
-            if(UNameTb.Text == "" || PasswordTb.Text=="")
+            if (UNameTb.Text == "" || PasswordTb.Text=="")
             {
                 MessageBox.Show("Enter Username and Password");
             }
-            else if(UNameTb.Text =="Admin" && PasswordTb.Text == "Password")
+            else if (UNameTb.Text =="Admin" && PasswordTb.Text == "Password")
             {
                 MainMenu Obj = new MainMenu();
                 Obj.Show();
@@ -56,6 +56,11 @@ namespace uasSchoolProgram
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

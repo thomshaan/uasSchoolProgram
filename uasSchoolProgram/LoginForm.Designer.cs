@@ -30,7 +30,6 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(LoginForm));
             pictureBox1 = new PictureBox();
-            label2 = new Label();
             label1 = new Label();
             label3 = new Label();
             UNameTb = new TextBox();
@@ -44,27 +43,13 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.BackgroundImage = Properties.Resources.school_icon_png_14043;
-            pictureBox1.Image = Properties.Resources.school_icon_png_14043;
-            pictureBox1.Location = new Point(299, 73);
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(254, 33);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(189, 185);
+            pictureBox1.Size = new Size(310, 296);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 7;
             pictureBox1.TabStop = false;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Nohemi", 18F, FontStyle.Regular, GraphicsUnit.Point);
-            label2.ForeColor = Color.FromArgb(148, 115, 96);
-            label2.Location = new Point(272, 284);
-            label2.Name = "label2";
-            label2.Size = new Size(244, 22);
-            label2.TabIndex = 6;
-            label2.Text = "School Management";
-            label2.TextAlign = ContentAlignment.MiddleCenter;
-            label2.UseMnemonic = false;
             // 
             // label1
             // 
@@ -154,7 +139,6 @@
             Controls.Add(UNameTb);
             Controls.Add(label3);
             Controls.Add(pictureBox1);
-            Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "LoginForm";
@@ -168,7 +152,6 @@
         #endregion
 
         private PictureBox pictureBox1;
-        private Label label2;
         private Label label1;
         private Label label3;
         private TextBox UNameTb;
