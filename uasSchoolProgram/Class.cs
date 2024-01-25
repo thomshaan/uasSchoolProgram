@@ -19,7 +19,7 @@ namespace uasSchoolProgram
             DisplayClass();
         }
 
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\THOMAS\Documents\school.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=Resources/school.mdf;Integrated Security=True;Connect Timeout=30");
 
         private void ClassDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -159,6 +159,7 @@ namespace uasSchoolProgram
                     Con.Open();
                     SqlCommand cmd = new SqlCommand("Update ClassTbl set ClassName=@CName,ClassCapacity=@CCapacity,ClassUseTime=@CUseTime,ClassDate=@CDate where ClassId=@CID", Con);
                     cmd.Parameters.AddWithValue("@CName", ClassNameTb.Text);
+
                     cmd.Parameters.AddWithValue("@CCapacity", ClassUserCb.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@CUseTime", ClassUseTimeCb.Text);
                     cmd.Parameters.AddWithValue("@CDate", ClassDate.Value.Date);

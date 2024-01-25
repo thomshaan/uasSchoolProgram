@@ -275,5 +275,10 @@ namespace uasSchoolProgram
             Obj.Show();
             this.Hide();
         }
+
+        private void Attendance_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

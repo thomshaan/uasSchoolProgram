@@ -13,7 +13,7 @@ using MySqlX.XDevAPI.Relational;
 
 namespace uasSchoolProgram
 {
-    public partial class Teachers : Form
+    public partial class Teachers : Form    
     {
         public Teachers()
         {

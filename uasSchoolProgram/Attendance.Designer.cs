@@ -501,6 +501,7 @@
             FormBorderStyle = FormBorderStyle.None;
             Name = "Attendance";
             Text = "Form1";
+            Load += Attendance_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
