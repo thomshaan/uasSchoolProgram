@@ -19,7 +19,8 @@ namespace uasSchoolProgram
             DisplayClass();
         }
 
-        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=Resources/school.mdf;Integrated Security=True;Connect Timeout=30");
+        SqlConnection Con = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\THOMAS\Documents\school.mdf;Integrated Security=True;Connect Timeout=30");
+
 
         private void ClassDGV_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
